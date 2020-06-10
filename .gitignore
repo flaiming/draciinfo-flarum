@@ -5,7 +5,6 @@ config.php
 .idea
 server
 studio.json
-composer.lock
 *.bak
 *.gz
 *.log
