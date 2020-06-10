@@ -23,3 +23,170 @@ fof-user-directory:
         settings:
             title: Nastavení výpisu členů
             link: Přidat odkaz na výpis členů na domovskou stránku
+
+fof-terms:
+    admin:
+        settings:
+            title: Terms Settings
+
+            field:
+                signup-legal-text: Additional text on signup form
+                hide-updated-at: Do not show the date of update of the terms when an update is available
+                date-format: Date format
+                date-format-help: You can use any valid <a>Moment.js</a> format. Leave field empty for default.
+
+        titles:
+            policies: Policies
+
+        buttons:
+            new-policy: New Policy
+            edit-policy: Edit Policy
+            add-policy: Add Policy
+            save-policy: Save Policy
+            delete-policy: Delete Policy
+            set-to-now: Set to now
+
+        messages:
+            delete-policy-confirmation: >
+                This will permanently delete the policy {name} and the associated accept dates from the database.
+                Please make sure you made a backup of those dates if you need them for legal reasons.
+                Are you sure you want to delete this policy ?
+
+        policies:
+            name: Name
+            name-help: This name will be shown beside the checkbox and as the title of the update modal.
+            url: URL
+            url-help: The URL to the page where you can read the terms. Will open in a new tab when clicked.
+            update-message: Update Message
+            update-message-help: A message to show to existing users who have not yet accepted the latest terms.
+            terms-updated-at: Updated at
+            terms-updated-at-placeholder: YYYY-MM-DD (hh:mm:ss)
+            terms-updated-at-help: >
+                The date of the last terms update.
+                Setting this value will require all users who accepted prior to that date to accept again.
+                Must be in the past (otherwise users would never be able to accept after the date and get past the modal).
+            export-url: Export URL
+            export-url-help: >
+                Any user with permission "Export all policies data" can access those URLs to download the list of users who accepted this policy.
+                You can find more details about the available options on the <a>extension wiki</a>.
+
+        permissions:
+            see-user-policies-state: See the user policies state
+            postpone-policies-accept: Can postpone accepting the new terms
+            export-policies: Export all users and policies data
+
+    forum:
+        signup:
+            i-accept: Souhlasím s <a>{policy}</a>
+            must-accept: Musíte souhlasit s {policy}.
+
+        accept-modal:
+            title: Terms Update
+            updated-at: The terms were updated on {date}
+            updated-recently: The terms were updated since your last visit
+            i-accept: I accept the new <a>{policy}</a>
+            accept: Confirm
+            close: You can now close this modal
+
+        state-modal:
+            title: Terms accept state for user {username}
+            accepted-at: Accepted at {date}
+            not-accepted: Not accepted
+
+        update-alert:
+            must-accept-message: We've temporarily restricted access to your account while you check out the new terms.
+            can-accept-message: We recently updated the terms. You must accept them to continue using this website.
+            review: Click here to review and accept the new terms
+
+        user_controls:
+            state_button: Terms accept state
+
+fof-byobu:
+    forum:
+        badges:
+            is_private:
+                tooltip: Private discussion
+        buttons:
+            add_recipients: Recipients
+            submit: OK
+            edit_recipients: Edit Recipients
+            send_pd: "Send {username} a message"
+            cancel: Cancel
+            remove_from_discussion: Leave this private discussion
+            make_public: Make this discussion public
+        composer_private_discussion:
+            submit_button: Post Private Discussion
+            title_placeholder: Private Discussion Title
+        labels:
+            recipients: "{count} Recipient|{count} Recipients"
+            user_deleted: -deleted-
+        nav:
+            start_button: New Private Discussion
+        input:
+            search_recipients: Search recipient by typing first three characters...
+        search:
+            headings:
+                groups: Permission Groups
+        modal:
+            titles:
+                update_recipients: Update recipients of {title}
+                add_recipients: Add recipients to your discussion
+            help:
+                add_recipients: This discussion will only be visible to the users you choose here. At least 1 recipient (other than yourself) is required.
+                update_recipients: This discussion will only be visible to the users you choose here.
+        post:
+            recipients_modified:
+                added_and_removed: "{username} added recipients {added} and removed {removed}."
+                added: "{username} added recipients {added}."
+                removed: "{username} removed recipients {removed}."
+                removed_self: "{username} left the private discussion."
+        user:
+            settings:
+                block_pd: Block private discussions
+
+            byobu_link: Private Discussions
+            dropdown_label: Private Discussions
+
+        notifications:
+            pd_label: Someone includes me in a new private discussion
+            pd_reply_label: Someone posts in a private discussion I'm a recipient of
+            pd_reply_text: "{username} posted in a private discussion you're a part of"
+            pd_text: "{username} started a new private discussion with you"
+            pd_user_left_label: A recipient user leaves a private discussion I'm a part of
+            pd_user_left_text: "{username} left the private discussion"
+            pd_added_text: "{username} added you to a private discussion"
+            pd_added_label: "Someone adds me to an existing private discussion"
+            pd_made_public_label: "A private discussion is made public"
+            pd_made_public_text: "{username} made the discussion public"
+
+        confirm:
+            make_public: This will make this private discussion visible to everyone. Consider if this is the correct action before proceeding.
+
+    admin:
+        permission:
+            create_private_discussions_with_users: Create private discussions with users
+            create_private_discussions_with_groups: Create private discussions with groups
+            create_private_discussions_with_blocking_users: Create private discussions with users that block it
+            edit_user_recipients: Edit users partaking in private discussions
+            edit_group_recipients: Edit groups partaking in private discussions
+            make_private_into_public: Transform a private discussion into a public discussion
+            view_private_discussions-when-flagged: View private discussions of other users if flagged
+
+        settings:
+            use_tag_slug: Specify the tag that all private discussions must use
+            use_tag_slug_help: 'Select "{no_restriction}" to allow users to select their own tag. This applies to newly created private discussions only.'
+            use_tag_slug_no_restriction: "- No restriction -"
+            byobu_index: Display a link to Private Discussions on the index page
+            byobu_index_help: When this option is enabled, a link from the forum main nav items to Private Discussions will be displayed
+
+    notifications:
+        private_discussion_created:
+            title: "[Private Discussion] user started a new private discussion with you"
+        private_discussion_replied:
+            title: "[Private Discussion] user posted in a private discussion"
+        recipient_removed:
+            title: "[Private Discussion] user left the discussion"
+        private_discussion_added:
+            title: "[Private Discussion] user added you to a private discussion"
+        made_public:
+            title: "[Private Discussion] user made the discussion public"
