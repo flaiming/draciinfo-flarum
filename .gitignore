@@ -13,6 +13,7 @@ composer.lock
 
 public/assets/*
 !public/assets/smiles
+!public/assets/fonts
 vendor/
 migration/
 
