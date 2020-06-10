@@ -11,8 +11,8 @@ composer.lock
 *.log
 *.pyc
 
-storage/
 public/assets/*
 !public/assets/smiles
 vendor/
 migration/
+
