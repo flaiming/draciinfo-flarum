@@ -1,0 +1,17 @@
+.DS_Store
+Thumbs.db
+.vagrant
+config.php
+.idea
+server
+studio.json
+composer.lock
+*.bak
+*.gz
+*.log
+*.pyc
+
+storage/
+public/assets/*
+!public/assets/smiles
+vendor/
