@@ -39,6 +39,7 @@
         "docs": "https://flarum.org/docs/"
     },
     "require": {
+        "antoinefr/flarum-ext-online": "^0.4.0",
         "flarum/approval": "^0.1.0",
         "flarum/auth-facebook": "^0.1.0",
         "flarum/auth-github": "^0.1.0",
@@ -62,6 +63,7 @@
         "fof/byobu": "*",
         "fof/disposable-emails": "^0.1.0",
         "fof/follow-tags": "^0.3.4",
+        "fof/forum-statistics-widget": "^0.1.1",
         "fof/links": "^0.2.1",
         "fof/masquerade": "^0.3.3",
         "fof/merge-discussions": "^0.3.3",
