@@ -13,6 +13,7 @@ studio.json
 public/assets/*
 !public/assets/smiles
 !public/assets/fonts
+public/secret/
 vendor/
 migration/
 
