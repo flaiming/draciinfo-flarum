@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2a450aef9a1106dbbb8081b87df4e14d",
+    "content-hash": "97967730324d64efe63d150438f6e0f7",
     "packages": [
         {
             "name": "antoinefr/flarum-ext-online",
@@ -218,6 +218,59 @@
                 "sourcemap"
             ],
             "time": "2018-04-16T13:23:46+00:00"
+        },
+        {
+            "name": "clarkwinkelmann/flarum-ext-author-change",
+            "version": "0.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clarkwinkelmann/flarum-ext-author-change.git",
+                "reference": "af8b75e8c6d4f55517bf1e6c3612945a904a8f80"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clarkwinkelmann/flarum-ext-author-change/zipball/af8b75e8c6d4f55517bf1e6c3612945a904a8f80",
+                "reference": "af8b75e8c6d4f55517bf1e6c3612945a904a8f80",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": ">=0.1.0-beta.8 <0.1.0-beta.14"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Author Change",
+                    "icon": {
+                        "name": "fas fa-user-edit",
+                        "backgroundColor": "#684ba6",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/21731"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ClarkWinkelmann\\AuthorChange\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Let mods update the author of discussions and posts",
+            "keywords": [
+                "flarum"
+            ],
+            "time": "2020-03-04T15:07:17+00:00"
         },
         {
             "name": "components/font-awesome",
@@ -2378,6 +2431,61 @@
             "time": "2019-12-04T22:41:16+00:00"
         },
         {
+            "name": "fof/discussion-thumbnail",
+            "version": "0.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/discussion-thumbnail.git",
+                "reference": "fcc9fd35962f3259fb1894c3f76821d025111f43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/discussion-thumbnail/zipball/fcc9fd35962f3259fb1894c3f76821d025111f43",
+                "reference": "fcc9fd35962f3259fb1894c3f76821d025111f43",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.8"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Discussion Thumbnail",
+                    "icon": {
+                        "name": "fas fa-image",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/22231-friendsofflarum-discussion-thumbnail"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\DiscussionThumbnail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martin",
+                    "email": "me+fof@datitisev.me",
+                    "homepage": "https://datitisev.me",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Replace author avatars with the first image in a discussion's starting post",
+            "keywords": [
+                "flarum",
+                "friendsofflarum"
+            ],
+            "time": "2019-12-11T01:04:26+00:00"
+        },
+        {
             "name": "fof/disposable-emails",
             "version": "0.1.0",
             "source": {
@@ -2536,6 +2644,80 @@
                 "flarum"
             ],
             "time": "2019-12-28T23:07:09+00:00"
+        },
+        {
+            "name": "fof/impersonate",
+            "version": "0.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/impersonate.git",
+                "reference": "dbfec1667bcb8a3f9c3ec07c11d56164f36f5502"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/impersonate/zipball/dbfec1667bcb8a3f9c3ec07c11d56164f36f5502",
+                "reference": "dbfec1667bcb8a3f9c3ec07c11d56164f36f5502",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": ">=0.1.0-beta.12 <0.1.0-beta.14",
+                "fof/components": "^0.1.1"
+            },
+            "replace": {
+                "flagrow/impersonate": "*"
+            },
+            "suggest": {
+                "fof/moderator-notes": "Allows audit logging when users are impersonated"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Impersonate",
+                    "icon": {
+                        "name": "fas fa-id-card",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/9868"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Impersonate\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                },
+                {
+                    "name": "Ian Morland",
+                    "email": "ian@morland.me"
+                }
+            ],
+            "description": "Login as other users of your forum",
+            "keywords": [
+                "extension",
+                "flagrow",
+                "flarum",
+                "impersonate",
+                "login"
+            ],
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2020-05-29T12:04:25+00:00"
         },
         {
             "name": "fof/links",
