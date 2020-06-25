@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "97967730324d64efe63d150438f6e0f7",
+    "content-hash": "6f51383499e1f30545e190e2b5065bef",
     "packages": [
         {
             "name": "antoinefr/flarum-ext-online",
@@ -2263,6 +2263,86 @@
             "time": "2020-05-04T08:48:54+00:00"
         },
         {
+            "name": "fof/analytics",
+            "version": "0.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/analytics.git",
+                "reference": "c1ab797037255a92e2841fede74f9dbf3a379180"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/analytics/zipball/c1ab797037255a92e2841fede74f9dbf3a379180",
+                "reference": "c1ab797037255a92e2841fede74f9dbf3a379180",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.10"
+            },
+            "replace": {
+                "flagrow/flarum-ext-analytics": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Analytics",
+                    "icon": {
+                        "name": "fas fa-chart-line",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/1983"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Analytics\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniël Klabbers",
+                    "email": "daniel+flarum@klabbers.email",
+                    "homepage": "http://hyn.io"
+                },
+                {
+                    "name": "Santiago Testa Biali",
+                    "email": "santiago.t.biali@gmail.com"
+                },
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                },
+                {
+                    "name": "Ian Morland",
+                    "email": "ian@flarumite.com"
+                }
+            ],
+            "description": "Tracks analytics using Google Analytics, Google Optimize/GTM and piwik",
+            "keywords": [
+                "analytics",
+                "extension",
+                "flarum",
+                "google-analytics",
+                "gtm",
+                "piwik"
+            ],
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2020-06-21T09:47:04+00:00"
+        },
+        {
             "name": "fof/ban-ips",
             "version": "0.1.5",
             "source": {
@@ -2538,6 +2618,48 @@
                 "flarum"
             ],
             "time": "2019-06-22T12:57:32+00:00"
+        },
+        {
+            "name": "fof/extend",
+            "version": "0.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/extend.git",
+                "reference": "995839056a2cf1cd04725102faaac94218d0fc13"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/extend/zipball/995839056a2cf1cd04725102faaac94218d0fc13",
+                "reference": "995839056a2cf1cd04725102faaac94218d0fc13",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.12"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FoF\\Extend\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "David Sevilla Martín",
+                    "email": "david.s@redevs.org"
+                }
+            ],
+            "description": "Configurable PHP components for your Flarum extension",
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof",
+                    "type": "open_collective"
+                }
+            ],
+            "time": "2020-05-03T20:59:16+00:00"
         },
         {
             "name": "fof/follow-tags",
@@ -3098,6 +3220,63 @@
                 }
             ],
             "time": "2020-03-22T23:31:27+00:00"
+        },
+        {
+            "name": "fof/pretty-mail",
+            "version": "0.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/pretty-mail.git",
+                "reference": "3cbb72260e704541b2d7af0d6eaa61d1201589ab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/pretty-mail/zipball/3cbb72260e704541b2d7af0d6eaa61d1201589ab",
+                "reference": "3cbb72260e704541b2d7af0d6eaa61d1201589ab",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.10"
+            },
+            "replace": {
+                "reflar/pretty-mail": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FoF Pretty Mail",
+                    "icon": {
+                        "name": "fas fa-envelope-open",
+                        "backgroundColor": "#e74c3c",
+                        "color": "#fff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/11178-friendsofflarum-pretty-mail"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\PrettyMail\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Charlie K",
+                    "email": "issyrocks12@reflar.email"
+                }
+            ],
+            "description": "Make emails pretty",
+            "keywords": [
+                "extension",
+                "flarum",
+                "mail"
+            ],
+            "time": "2019-11-03T20:49:44+00:00"
         },
         {
             "name": "fof/recaptcha",
@@ -6914,6 +7093,52 @@
             "time": "2018-10-29T19:18:29+00:00"
         },
         {
+            "name": "squeevee/flarum-ext-fancybox",
+            "version": "0.2-beta",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/squeevee/flarum-ext-fancybox.git",
+                "reference": "1fb6e7b84f97bf08e3d25d0f85f631ae8659eb25"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/squeevee/flarum-ext-fancybox/zipball/1fb6e7b84f97bf08e3d25d0f85f631ae8659eb25",
+                "reference": "1fb6e7b84f97bf08e3d25d0f85f631ae8659eb25",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.8"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "FancyBox",
+                    "icon": {
+                        "name": "far fa-image",
+                        "backgroundColor": "#f2f2f2",
+                        "color": "#be4bdb"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Squeevee\\FancyBox\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-3.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Ellie Hawk",
+                    "email": "squeevee@yahoo.com"
+                }
+            ],
+            "description": "Image formatting and lightbox modal using FancyBox. (see https://fancyapps.com/fancybox)",
+            "time": "2019-05-01T05:15:15+00:00"
+        },
+        {
             "name": "swiftmailer/swiftmailer",
             "version": "v6.2.3",
             "source": {
@@ -6974,6 +7199,54 @@
                 "mailer"
             ],
             "time": "2019-11-12T09:31:26+00:00"
+        },
+        {
+            "name": "sycho/flarum-profile-cover",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SychO9/flarum-profile-cover.git",
+                "reference": "74f930ed07ac5a6dfbae2f3df86bcde082606202"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SychO9/flarum-profile-cover/zipball/74f930ed07ac5a6dfbae2f3df86bcde082606202",
+                "reference": "74f930ed07ac5a6dfbae2f3df86bcde082606202",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.10",
+                "fof/extend": ">=0.2.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Profile Cover",
+                    "icon": {
+                        "name": "fas fa-image",
+                        "backgroundColor": "#004957",
+                        "color": "#fff"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SychO\\ProfileCover\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sami 'SychO' Mazouz",
+                    "email": "ilyasmazouz@gmail.com",
+                    "homepage": "https://sycho9.github.io"
+                }
+            ],
+            "description": "Adds the ability to add a cover image to a profile.",
+            "time": "2020-04-11T21:10:01+00:00"
         },
         {
             "name": "symfony/config",
@@ -8600,6 +8873,56 @@
             "time": "2016-03-31T09:25:28+00:00"
         },
         {
+            "name": "v17development/flarum-seo",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/v17development/flarum-seo.git",
+                "reference": "d814c00d7c66cb00f8391e793597aed5947de0f9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/v17development/flarum-seo/zipball/d814c00d7c66cb00f8391e793597aed5947de0f9",
+                "reference": "d814c00d7c66cb00f8391e793597aed5947de0f9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "flarum/core": "^0.1.0-beta.12"
+            },
+            "suggest": {
+                "fof/sitemap": "Allows you to generate powerful sitemap.xml files"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "SEO",
+                    "icon": {
+                        "name": "fas fa-check",
+                        "backgroundColor": "#0072ff",
+                        "color": "#ffffff"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/18316"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "V17Development\\FlarumSeo\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Jasper Vriends - V17 Development",
+                    "email": "jasper@v17.nl"
+                }
+            ],
+            "description": "Adds SEO tags for your Flarum forum",
+            "time": "2020-05-26T11:06:16+00:00"
+        },
+        {
             "name": "wikimedia/less.php",
             "version": "v3.0.0",
             "source": {
@@ -8667,7 +8990,8 @@
     "aliases": [],
     "minimum-stability": "beta",
     "stability-flags": {
-        "madnest/flarum-lang-czech": 10
+        "madnest/flarum-lang-czech": 10,
+        "squeevee/flarum-ext-fancybox": 10
     },
     "prefer-stable": true,
     "prefer-lowest": false,
