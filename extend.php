@@ -9,7 +9,18 @@
 
 use Flarum\Extend;
 
-return [
-	// Register extenders here to customize your forum!
-	new Extend\Locales(__DIR__ . '/locale')
-];
+
+// get all locale files
+$path = __DIR__.'/locale/';
+$locales = [];
+foreach (scandir($path) as $f) {
+    if ($f == '.' || $f == '..')
+        continue;
+    foreach (scandir($path.$f) as $ff) {
+        if ($ff == '.' || $ff == '..')
+            continue;
+        array_push($locales, new Extend\Locales($path.$f.'/'.$ff));
+    }
+}
+
+return $locales;
