@@ -1,28 +1,28 @@
 mybbtoflarum:
   admin:
     nav:
-      title: MyBB to Flarum
-      description: Convert a MyBB forum into this Flarum instance
+      title: MyBB na Flarum
+      description: Převést MyBB fórum do této instance Flarum
     page:
-      text: Convert a Mybb forum into this Flarum instance. Fill in the required data, aftwards click on "migrate".
-      btnConvert: Migrate
+      text: Převést MyBB fórum do této instance Flarum. Vyplň potřebné údajen, potom klikni na "Migrovat".
+      btnConvert: Migrovat
       form:
         general:
-          title: General settings
-          migrateAvatars: Migrate avatars
-          migrateSoftThreads: Migrate soft deleted threads
-          migrateSoftPosts: Migrate soft deleted posts
+          title: Obecná nastavení
+          migrateAvatars: Migrovat avatary
+          migrateSoftThreads: Migrovat soft deleted vlákna
+          migrateSoftPosts: Migrovat soft deleted příspěvky
         mybb:
-          title: MyBB settings
-          host: Database host
-          user: Database user
-          password: Database password
-          db: Database name
-          prefix: Table prefix
-          mybbPath: Absolute MyBB path
+          title: Nastavení databáze MyBB
+          host: Host
+          user: Uživatel
+          password: Heslo
+          db: Jméno
+          prefix: Prefix tabulky
+          mybbPath: Absolutní cesta k MyBB
         options:
-          title: General migrate options
-          migrateUsers: Migrate users
-          migrateThreadsPosts: Migrate threads and posts
-          migrateUserGroups: Migrate user groups
-          migrateCategories: Migrate categories
+          title: Obecné nastavení migrace
+          migrateUsers: Migrovat uživatele
+          migrateThreadsPosts: Migrovat vlákna a příspvky
+          migrateUserGroups: Migrovat uživatelské skupiny
+          migrateCategories: Migrovat kategorie
