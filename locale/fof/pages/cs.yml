@@ -3,12 +3,12 @@ fof-pages:
     edit_page:
       content_label: => fof-pages.ref.content
       content_placeholder: => fof-pages.ref.content
-      delete_page_button: Delete page
-      delete_page_confirmation: "Are you sure you want to delete this page?"
-      hidden_label: Save as draft
-      restricted_label: Restrict access (configure who can access in the Permissions tab)
-      html_label: Enable HTML
-      set_as_home_page_confirmation: "Are you sure you want to set this page as your home page?"
+      delete_page_button: Smazat stránku
+      delete_page_confirmation: "Opravdu chceš smazat tuto stránku?"
+      hidden_label: Uložit jako koncept
+      restricted_label: Omezit přístup (přístup nastavíš v záložce oprávnění)
+      html_label: Povolit HTML
+      set_as_home_page_confirmation: "Opravdu chceš nastavit stránku jako svoji hlavní stránku?"
       slug_label: => fof-pages.ref.slug
       slug_placeholder: => fof-pages.ref.slug
       submit_button: => core.ref.save_changes
@@ -19,23 +19,23 @@ fof-pages:
       url_placeholder: => fof-pages.ref.url
     nav:
       pages_button: => fof-pages.ref.pages
-      pages_text: Create custom static pages.
+      pages_text: Vytvořit vlastní statické stránky.
     pages:
-      about_text: Create and manage static pages.
+      about_text: Vytvořit a spravovat statické stránky.
       create_button: => fof-pages.ref.create_page
     pages_list:
-      empty_text: It looks like there are no pages here.
+      empty_text: Vypadá to, že tu nejsou žádné stránky.
       title: => fof-pages.ref.title
     permissions:
-      restricted: View restricted pages
+      restricted: Zobrazit zakázané stránky
     badges:
-      hidden: Draft
-      restricted: Restricted
+      hidden: Koncept
+      restricted: Zakázané
 
   ref:
-    content: Content
-    create_page: Create page
-    pages: Pages
+    content: Obsah
+    create_page: Vytvořit stránku
+    pages: Stran
     slug: Slug
-    title: Title
+    title: Název
     url: URL
