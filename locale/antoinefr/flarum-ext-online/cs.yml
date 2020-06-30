@@ -5,5 +5,5 @@ antoinefr-online:
   admin:
     settings:
       title: Nastavení
-      displaymax: Počet zobrazených členů
+      displaymax: Počet zobrazených uživatelů
       titleoflist: Titulek zobrazený nad seznamem
