@@ -1,14 +1,14 @@
 fof-forum-statistics-widget:
   forum:
     navbar:
-      widget_title: Forum Statistics
-      discussions_count: "Discussions: {discussionsCount}"
-      posts_count: "Posts: {postsCount}"
-      users_count: "Members: {usersCount}"
-      latest_member: "Latest Member: "
+      widget_title: Statistika fóra
+      discussions_count: "Diskuze: {discussionsCount}"
+      posts_count: "Příspěvky: {postsCount}"
+      users_count: "Členové: {usersCount}"
+      latest_member: "Poslední člen: "
   admin:
     settings:
-      title: Widget Settings
-      widget_order_label: Widget Order
-      widget_helper_text: "Edit this setting to adjust this widget's position on the sidenav section of your Flarum forum.
-      The higher the number, the higher this widget will be on the sidenav items list (this value can be either positive or negative)."
+      title: Nastavení widgetu
+      widget_order_label: Pořadí widgetu
+      widget_helper_text: "Uprav toto nastavení pro posunutí widgetu v bočním panelu svého Flarum fóra.
+      Čím vyšší číslo, tím výše bude widget umístěn (hodnota může být kladná i záporná)."
