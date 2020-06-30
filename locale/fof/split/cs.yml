@@ -1,15 +1,15 @@
 fof-split:
     admin:
         permissions:
-            split_discussion_label: Split posts from discussions
+            split_discussion_label: Oddělit příspěvky z diskuzí
     forum:
         post:
-            was_split_to: "{count} post was split to {target}.|{count} posts were split to {target}."
-            was_split_from: "{count} post was split from {target}.|{count} posts were split from {target}."
+            was_split_to: "{count} příspěvek byl rozdělen do {target}.|{count} příspěvků bylo rozděleno do {target}."
+            was_split_from: "{count} příspěvek byl rozdělen z {target}.|{count} příspěvků bylo rozděleno z {target}."
         split:
-            from: Split from here
-            to: Split to here
+            from: Rozdělit odsud
+            to: Rozdělit až sem
         modal:
-            title: Split discussion
-            new_discussion_label: Specify the title for the new discussion
-            submit_button: Split
+            title: Rozdělit diskuze
+            new_discussion_label: Vyber název nové diskuze
+            submit_button: Rozdělit
