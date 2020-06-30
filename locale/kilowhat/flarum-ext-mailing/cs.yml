@@ -21,7 +21,7 @@ kilowhat-mailing:
             on_its_way: High Five! Tvůj mail je na cestě k {recipientsCount} příjemcům!
         recipient_kinds:
             user: Uživatel
-            group: Skipina
+            group: Skupina
             email: Email
 
     api:
