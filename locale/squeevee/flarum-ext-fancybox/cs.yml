@@ -1,5 +1,5 @@
 fancybox:
   forum:
-    next: Next
-    prev: Previous
-    error: An error occured loading the image.
+    next: Další
+    prev: Předchozí
+    error: Nepovedlo se načíst obrázek.

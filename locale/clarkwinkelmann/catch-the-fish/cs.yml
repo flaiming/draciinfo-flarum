@@ -1,157 +1,157 @@
 clarkwinkelmann-catch-the-fish:
     forum:
         moderate:
-            add: Add
-            edit: Edit
-            delete: Delete
-            fishes: Fishes
-            rounds: Rounds
+            add: Přidat
+            edit: Upravit
+            delete: Smazat
+            fishes: Ryby
+            rounds: Kola
 
         nav:
-            rankings: Catch The Fish Rankings
-            settings: Catch The Fish Settings
+            rankings: Výsledky rybolovu
+            settings: Nastavení rybolovu
 
         new-round-modal:
-            title: New Round
+            title: Nové kolo
 
         new-fish-modal:
-            title: New Fish
+            title: Nová ryba
 
         edit-round-modal:
-            title: Edit Round "{name}"
+            title: Upravit kolo "{name}"
 
         edit-fish-modal:
-            title: Edit Fish "{name}"
+            title: Upravit rybu "{name}"
 
         caught-fish-modal:
-            title: You caught a fish !
-            named-by: Named by
-            placed-by: Placed by
-            congratulation: Congratulation, you caught a fish ! You have caught {catch_count} fishes.
-            name: Fish name
-            name-help: You can rename the fish if you want. The name must respect the forum guidelines.
-            placement-help: You can hide the fish where you want on the forum in recent discussions and active user profiles. You cannot catch a fish you placed yourself.
-            submit-name-place-later: Save name and choose hiding place
-            submit-name: Save name
-            submit-place-later: Yep I'll choose a hiding place
-            submit-continue: Continue
-            submit-name-place-random: Save name and let the fish hide itself
-            submit-place-random: Let the fish hide itself
+            title: Ulovil(a) jsi rybu!
+            named-by: Pojmenoval(a)
+            placed-by: Nastražil(a)
+            congratulation: Gratulujeme, ulovil(a) jsi rybu! Už jsi ulovil(a) {catch_count} ryb.
+            name: Jméno ryby
+            name-help: Jestli chceš, můžeš rybu přejmenovat. Jméno nesmí porušovat podmínky fóra.
+            placement-help: Rybu můžeš nastražit kdekoli na fóru v aktivních diskuzích a uživatelských profilech. Nemůžeš ulovit rybu kterou jsi sam(a) nastražil(a).
+            submit-name-place-later: Uložit jméno a nastražit rybu
+            submit-name: Uložit jméno
+            submit-place-later: Ano, vyberu kam rybu nastražím
+            submit-continue: Pokračovat
+            submit-name-place-random: Ulož jméno a nech rybu schovat se
+            submit-place-random: Nech rybu schovat se
 
         edit-round:
             name: Name
-            name-help: The public name for this round, will be shown in banner and in ranking
-            starts-at: Start time
-            ends-at: End time
+            name-help: Veřejné jméno tohoto kola, bude vidět v banneru a ve výsledcích
+            starts-at: Začátek
+            ends-at: Konec
             starting-pack: Starting Pack
-            starting-pack-help: Will include a few fishes to get you started in no time
-            create: Create round
-            save: Save round
-            delete: Delete round
-            delete-confirmation: Delete round "{name}" ?
+            starting-pack-help: Obsahuje pár ryb pro rychlý začátek
+            create: Vytvořit kolo
+            save: Uložit kolo
+            delete: Smazat kol
+            delete-confirmation: Smazat kolo "{name}" ?
 
         edit-fish:
-            name: Name
-            name-help: The current name of the fish. Can be edited by players if they have the permission to rename fishes
-            create: Create fish
-            save: Save fish
-            delete: Delete fish
-            delete-confirmation: Delete fish "{name}" ?
+            name: Jméno
+            name-help: Stávající jméno ryby. Pokud hráči mají oprávnění, mohou rybu přejmenovat
+            create: Vytvořit rybu
+            save: Uložit rybu
+            delete: Smazat rybu
+            delete-confirmation: Smazat rybu "{name}" ?
 
         moving-fish:
-            login: Login to catch fishes
+            login: Přihlaš se k lovu ryb
 
         fish-image:
-            alt: Image of fish "{name}"
-            missing: Missing fish image
+            alt: Obrázek ryby "{name}"
+            missing: Ryba nemá obrázek
 
         round-alert:
-            message: Round "{name}", catch as many fishes as you can until {time}
-            rankings: See rankings
+            message: Kolo "{name}", chyť co nejvíc ryb před {time}
+            rankings: Ukaž výsledky
 
         basket:
-            title: Fish Basket
-            drag-help: Drag and drop the fish on a discussion, post or user profile
-            time: "Place until: {time}"
+            title: Košík ryb
+            drag-help: Přetáhni rybu na diskuzi, příspěvek nebo uživatelský profil
+            time: "Ukryj před: {time}"
 
         table-round:
-            loading: Loading...
-            title: Rounds
-            new: New round
-            name: Name
-            start: From
-            end: Until
-            actions: Actions
-            edit: Edit
-            fishes: Fishes
+            loading: Načítám...
+            title: Kola
+            new: Nové kolo
+            name: Název
+            start: Od
+            end: Do
+            actions: Akce
+            edit: Upravit
+            fishes: Ryby
 
         table-fish:
-            loading: Loading...
-            title: Fishes for round {name}
-            new: New fish
-            image: Image
-            name: Name
-            user-name: Last named by
-            user-place: Last placed by
-            actions: Actions
-            edit: Edit
-            no-user-name: Not renamed
-            no-user-place: Random
-            upload: Upload new image
-            new-from-image: Create new fishes via bulk image import
+            loading: Načítám...
+            title: Ryby pro kolo {name}
+            new: Nová ryba
+            image: Obrázek
+            name: Jméno
+            user-name: Naposledy pojmenoval(a)
+            user-place: Naposledy nastražil(a)
+            actions: Akce
+            edit: Upravit
+            no-user-name: Nepřejmenována
+            no-user-place: Náhodně
+            upload: Nahrát nový obrázek
+            new-from-image: Vytvořit ryby hromadným obrázkem
 
         table-ranking:
-            loading: Loading...
-            title: Ranking of round {name}
-            rank: Name
-            count: Fishes caught
-            user: User
+            loading: Načítám...
+            title: Výsledky kola {name}
+            rank: Jméno
+            count: Uloveno ryb
+            user: Uživatel
 
         page-ranking:
-            title: Rankings
-            permission: You do not have permission to see the rankings
-            nothing: No active rounds
+            title: Výsledky
+            permission: Nemáš oprávnněí vidět výsledky
+            nothing: Žádná aktivní kola
 
         drop-area:
-            message: You can drop the fish here
+            message: Sem můžeš nastražit rybu
             missing-from-store: Could not find the fish in the data store
 
     admin:
         settings:
-            title: Catch The Fish Settings
-            discussion-age: How old discussions can be for a fish to be placed on it (days)
-            post-age: How old posts can be for a fish to be placed on it (days)
+            title: Nastavení rybolovu
+            discussion-age: Do jak starých diskuzí lze ryby nastražit (dny)
+            post-age: Do jak starých příspvků lze nastražit ryby (dny)
             user-age: How long since a user must have been active for a fish to be placed on it (days)
-            time-to-place: Time allowed to place fish before it is randomly placed (minutes)
-            alert-round: Show an altert with the round name and duration on the homepage
-            animate-flip: Flip fish images based on direction
+            time-to-place: Čas k nastražení ryby než uplave a schová se sama (minuty)
+            alert-round: Zobrazit název kola a zbývající čas na hlavní stránce
+            animate-flip: Zrcadit obrázek ryby podle směru
 
         permissions:
-            visible: See the fishes
-            list-rankings: Access the rankings page
-            participate: Participate in the rounds and catch fishes
-            choose-place: Choose fish placement after catching
-            choose-name: Choose fish name after catching
-            moderate: Moderate rounds and fishes
+            visible: Vidět ryby
+            list-rankings: Vidět hodnocení
+            participate: Účastnit se v kolech rybolovu
+            choose-place: Nastražit rybu po ulovení
+            choose-name: Přejmenovat rybu po ulovení
+            moderate: Moderovat kola a ryby
 
     api:
-        default-fish-name: "Fish #{number}"
-        wrong-catch-placement: There is no fish here. Maybe you weren't quick enough and someone else got it first
-        too-many-placement-models: Only one placement is possible at a time
-        invalid-discussion-id: Discussion doesn't seem to exist, maybe it was recently deleted
-        invalid-post-id: Post doesn't seem to exist, maybe it was recently deleted
-        invalid-user-id: User doesn't seem to exist, maybe it was recently deleted
-        model-deleted: Can't place fish on a deleted discussion or post
-        model-private: Can't place fish on a private discussion or post
-        inactive-discussion: Can't place fish on discussion inactive for more than {days} days
-        inactive-post: Can't place fish on post created more than {days} days ago
-        inactive-user: Can't place fish on user inactive for more than {days} days
-        non-comment-post: Can only place fishes on comment posts
-        user-suspended: Can't place fish on a suspended user
-        random-error: Could not generate a random fish placement
-        cannot-catch-own-fish: You cannot catch a fish you placed yourself
-        cannot-catch-hold-fish: The previous catcher needs to release the fish before you can catch it
-        fish-update-wrong-user: You can no longer edit this fish. Somebody else has probably caught it
-        fish-update-expired: Too late, you can no longer edit this fish. It has automatically been placed somewhere in the meantime
-        round-not-started: This round has not started
-        round-finished: This round is finished
+        default-fish-name: "Ryba #{number}"
+        wrong-catch-placement: Není za žádná ryba. Možná byl někdo rychlejší a ulovil ji dřív
+        too-many-placement-models: Lze vybrat jen jedna skrýš
+        invalid-discussion-id: Diskuze vypadá že neexistuje, možná byla smazána
+        invalid-post-id: Příspěvek vypadá že neexistuje, možná byl smazán
+        invalid-user-id: Uživatel vypadá že neexistuje, možná byl smazán
+        model-deleted: Rybu nelze nastražit do smazané diskuze nebo příspěvku
+        model-private: Rybu nelze nastražit do soukromé diskuze nebo příspěvku
+        inactive-discussion: Rybu nelze nastražit do diskuze neaktivní více než {days} dní
+        inactive-post: Rybu nelze nastražit do příspěvku staršího než {days} dní
+        inactive-user: Rybu nelze nastražit k uživateli neaktivnímu více než {days} dní
+        non-comment-post: Ryby lze nastražit jen k příspěvkům
+        user-suspended: Rybu nelze nastražit na suspend uživatele
+        random-error: Ryba se nedokázala sama schovat
+        cannot-catch-own-fish: Nemůžeš ulovit rybu, kterou jsi nastražil(a)
+        cannot-catch-hold-fish: Předchozí uživatel musí rybu pustit abys mi mohl(a) ulovit
+        fish-update-wrong-user: Tuto rybu už nemůžeš upravovat. Nejspíš ji mezitím ulovil někdo jiný
+        fish-update-expired: Uplavala! Rybu už nemůžeš upravit, zatím co jsi nekoukal(a), ryba ti uplavala
+        round-not-started: Toto kolo ještě nezačalo
+        round-finished: Toto kolo už skončilo
