@@ -10,8 +10,8 @@ mybbtoflarum:
         general:
           title: Obecná nastavení
           migrateAvatars: Migrovat avatary
-          migrateSoftThreads: Migrovat soft deleted vlákna
-          migrateSoftPosts: Migrovat soft deleted příspěvky
+          migrateSoftThreads: Migrovat skrytá (soft deleted) vlákna
+          migrateSoftPosts: Migrovat skryté (soft deleted) příspěvky
         mybb:
           title: Nastavení MyBB databáze
           host: Host

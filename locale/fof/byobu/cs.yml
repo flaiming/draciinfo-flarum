@@ -15,7 +15,7 @@ fof-byobu:
             submit_button: Založit soukromou diskuzi
             title_placeholder: Název soukromé diskuze
         labels:
-            recipients: "{count} příjemce|{count} příjemců"
+            recipients: "Příjemců: {count}|Příjemců: {count}"
             user_deleted: -smazán-
         nav:
             start_button: Nová soukromá diskuze
@@ -26,7 +26,7 @@ fof-byobu:
                 groups: Skupiny oprávnění
         modal:
             titles:
-                update_recipients: Změnit příjemce v {title}
+                update_recipients: Změnit příjemce od {title}
                 add_recipients: Přidat příjemce do diskuze
             help:
                 add_recipients: Diskuze bude viditelná jen pro uživatele, které si zde vybereš. Je vyžadován alespoň jeden další příjemce kromě tebe.
@@ -67,11 +67,11 @@ fof-byobu:
             edit_user_recipients: Upravit příjemce v soukromých diskuzích
             edit_group_recipients: Upravit skupiny v soukromých diskuzích
             make_private_into_public: Převést soukromou diskuzi na veřejnou
-            view_private_discussions-when-flagged: View private discussions of other users if flagged
+            view_private_discussions-when-flagged: Zobrazit nahlášené soukromé diskuze jiných uživatelů
 
         settings:
-            use_tag_slug: Vyber tag, který budou mít všechny soukromé diskuze
-            use_tag_slug_help: 'Vyber "{no_restriction}" aby si uživatelé mohli zvolit další tag. Vztahuje se jen na nově vytvořené diskuze.'
+            use_tag_slug: Vyber štítek, který budou mít všechny soukromé diskuze
+            use_tag_slug_help: 'Vyber "{no_restriction}" aby si uživatelé mohli zvolit vlastní štítek. Vztahuje se jen na nově vytvořené diskuze.'
             use_tag_slug_no_restriction: "- Bez omezení -"
             byobu_index: Zobrazit odkaz na soukromé diskuze na hlavní stránce
             byobu_index_help: Pokud je volba zapnutá, odkaz na soukromé diskuze bude vidět v navigaci fóra

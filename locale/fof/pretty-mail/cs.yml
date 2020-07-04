@@ -7,12 +7,12 @@ fof-pretty-mail:
       reset: Vrátit na základní
       confirm: Opravdu chceš obnovit základní šablonu?
       default: Základní šablona
-      newPost: Flarum/subscriptions Nový příspěvek
-      userMentioned: Flarum/mentions Reakce na uživatele
-      postMentioned: Flarum/mentions Reakce na příspěvek
+      newPost: Email o novém příspěvku
+      userMentioned: Email o zmínce uživatele
+      postMentioned: Email o zmínce příspěvku
       notifications: Šablony oznámení
-      notificationHelp: 'Je doporučeno použít "$forumStyle" pro tyto emaily, protože mohou obsahovat BBCODE. Tyto emaily také mohou použít "$user" s celým modelem uživatele.'
-      help: '"$body" bude obsahovat obsah emailu, "$forumStyle" obsahuje <strong>celý CSS soubor</strong> fóra, "$baseUrl" obsahuje adresu fóra, "$settings" ti dovoluje pracovat s SettingsRepositoryInterface, a "$link" obsahuje odkaz v rámci emailu. Prozkoumej jednotlivé šablony, které slouží jako příklady.'
+      notificationHelp: 'Je doporučeno použít "$forumStyle" pro tyto emaily, protože mohou obsahovat BBCODE. V těchto emailech také můžeš použít výraz "$user" který obsahuje kompletní model adresovaného uživatele.'
+      help: '"$body" bude obsahovat obsah emailu, "$forumStyle" obsahuje <strong>celé CSS fóra</strong> fóra, "$baseUrl" obsahuje URL adresu fóra, "$settings" ti dovoluje pracovat s SettingsRepositoryInterface a "$link" obsahuje odkaz v emailu. Prozkoumej jednotlivé šablony pro zjištění, jak se proměnné používají.'
     css_settings:
       label: Nastavení CSS
       help: Můžeš vložit CSS soubor celého fóra do HTML kódu emailu. Pokud toto zapneš, můžou se vyskytnout problémy u některých poskytovatelů emailu.

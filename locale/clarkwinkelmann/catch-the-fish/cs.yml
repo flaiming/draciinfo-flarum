@@ -29,7 +29,7 @@ clarkwinkelmann-catch-the-fish:
             placed-by: Nastražil(a)
             congratulation: Gratulujeme, ulovil(a) jsi rybu! Už jsi ulovil(a) {catch_count} ryb.
             name: Jméno ryby
-            name-help: Jestli chceš, můžeš rybu přejmenovat. Jméno nesmí porušovat podmínky fóra.
+            name-help: Jestli chceš, můžeš rybu přejmenovat. Jméno nesmí porušovat pravidla fóra.
             placement-help: Rybu můžeš nastražit kdekoli na fóru v aktivních diskuzích a uživatelských profilech. Nemůžeš ulovit rybu kterou jsi sam(a) nastražil(a).
             submit-name-place-later: Uložit jméno a nastražit rybu
             submit-name: Uložit jméno
@@ -59,7 +59,7 @@ clarkwinkelmann-catch-the-fish:
             delete-confirmation: Smazat rybu "{name}" ?
 
         moving-fish:
-            login: Přihlaš se k lovu ryb
+            login: K lovu ryb se musíš přihlásit
 
         fish-image:
             alt: Obrázek ryby "{name}"
@@ -121,7 +121,7 @@ clarkwinkelmann-catch-the-fish:
             title: Nastavení rybolovu
             discussion-age: Do jak starých diskuzí lze ryby nastražit (dny)
             post-age: Do jak starých příspvků lze nastražit ryby (dny)
-            user-age: How long since a user must have been active for a fish to be placed on it (days)
+            user-age: Jak minimálně dlouho musí být uživatel aktivní, aby mohla být do jeho profilu nastražena ryba (dny)
             time-to-place: Čas k nastražení ryby než uplave a schová se sama (minuty)
             alert-round: Zobrazit název kola a zbývající čas na hlavní stránce
             animate-flip: Zrcadit obrázek ryby podle směru
@@ -136,18 +136,18 @@ clarkwinkelmann-catch-the-fish:
 
     api:
         default-fish-name: "Ryba #{number}"
-        wrong-catch-placement: Není za žádná ryba. Možná byl někdo rychlejší a ulovil ji dřív
+        wrong-catch-placement: Není tu žádná ryba. Možná byl někdo rychlejší a ulovil ji dřív
         too-many-placement-models: Lze vybrat jen jedna skrýš
-        invalid-discussion-id: Diskuze vypadá že neexistuje, možná byla smazána
-        invalid-post-id: Příspěvek vypadá že neexistuje, možná byl smazán
-        invalid-user-id: Uživatel vypadá že neexistuje, možná byl smazán
+        invalid-discussion-id: Diskuze neexistuje, možná byla smazána
+        invalid-post-id: Příspěvek neexistuje, možná byl smazán
+        invalid-user-id: Uživatel neexistuje, možná byl smazán
         model-deleted: Rybu nelze nastražit do smazané diskuze nebo příspěvku
         model-private: Rybu nelze nastražit do soukromé diskuze nebo příspěvku
         inactive-discussion: Rybu nelze nastražit do diskuze neaktivní více než {days} dní
         inactive-post: Rybu nelze nastražit do příspěvku staršího než {days} dní
         inactive-user: Rybu nelze nastražit k uživateli neaktivnímu více než {days} dní
         non-comment-post: Ryby lze nastražit jen k příspěvkům
-        user-suspended: Rybu nelze nastražit na suspend uživatele
+        user-suspended: Rybu nelze nastražit na zablokovaného uživatele
         random-error: Ryba se nedokázala sama schovat
         cannot-catch-own-fish: Nemůžeš ulovit rybu, kterou jsi nastražil(a)
         cannot-catch-hold-fish: Předchozí uživatel musí rybu pustit abys mi mohl(a) ulovit

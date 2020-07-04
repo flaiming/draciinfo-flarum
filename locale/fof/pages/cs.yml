@@ -6,7 +6,7 @@ fof-pages:
       delete_page_button: Smazat stránku
       delete_page_confirmation: "Opravdu chceš smazat tuto stránku?"
       hidden_label: Uložit jako koncept
-      restricted_label: Omezit přístup (v záložce nastavení vyber kdo může mít přístup)
+      restricted_label: Omezit přístup (v záložce Oprávnění vyber kdo může mít přístup)
       html_label: Povolit HTML
       set_as_home_page_confirmation: "Chceš tuto stránku opravdu nastavit jako svoji domovskou?"
       slug_label: => fof-pages.ref.slug
@@ -27,10 +27,10 @@ fof-pages:
       empty_text: Vypadá to, že tu nejsou žádné stránky.
       title: => fof-pages.ref.title
     permissions:
-      restricted: Zobrazit zamčené stránky
+      restricted: Zobrazit stránky s omezeným přístupem
     badges:
       hidden: Koncept
-      restricted: Zamčeno
+      restricted: Omezený přístup
 
   ref:
     content: Obsah

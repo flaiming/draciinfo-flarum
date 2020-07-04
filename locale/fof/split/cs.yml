@@ -1,7 +1,7 @@
 fof-split:
     admin:
         permissions:
-            split_discussion_label: Oddělovat príspěvky z diskuzí
+            split_discussion_label: Oddělit příspěvky z diskuzí
     forum:
         post:
             was_split_to: "{count} příspěvek byl oddělen {target}.|{count} příspěvky byly odděleny do {target}."

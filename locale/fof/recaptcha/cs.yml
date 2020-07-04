@@ -1,7 +1,7 @@
 fof-recaptcha:
   admin:
     settings:
-      help_text: Zadej své přihlašovací údaje k Google reCAPTCHA <a>sem</a>.
+      help_text: Získej své přihlašovací údaje k Google reCAPTCHA <a>sem</a>.
 
       type_label: Typ reCAPTCHA
 

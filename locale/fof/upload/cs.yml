@@ -8,15 +8,15 @@ fof-upload:
       disable-download-logging: |
         Vypne logování všech stahování na fóru. Pokud necháš zapnuté, můžeš v blízké budoucnosti vidět statistiky a počty stažení
       disable-hotlink-protection: |
-        Ochrana proti hotlinkování souborů. Aktuální metoda vyžaduje csrf token a post id.
+        Ochrana proti stahování souborů z cizích stránek. Aktuální metoda vyžaduje csrf token a post id.
       download_templates: |
-        Šablony určují ja budou soubory vidět ve fóru, například jako náhledy, tlačítka apod. Zatím jsou dostupné:
+        Šablony určují jak budou soubory vidět ve fóru, například jako náhledy, tlačítka apod. Zatím jsou dostupné:
       mime_types: |
         Tady si přes regulérní příkazy můžeš namapovat upload adapter a šablonu pro každý nahraný MIME type.
       resize: |
-        Vyber jestli chceš obrázky při nahrání zmenšit. Můžeš zadat maximální šířku a výšku v pixelech. Změna velikosti zachovává poměr stran.
+        Vyber, jestli chceš obrázky při nahrání zmenšit. Můžeš zadat maximální šířku a výšku v pixelech. Změna velikosti zachovává poměr stran.
       watermark: |
-        Vyber jestli se obrázky nahrají s vodoznakem. Vodoznaky jsou přidávány podle nastavení níže. Neplatí pro GIF.
+        Vyber, jestli se obrázky nahrají s vodoznakem. Vodoznaky jsou přidávány podle nastavení níže. Neplatí pro GIF.
     labels:
       aws-s3:
         bucket: Bucket
@@ -43,7 +43,7 @@ fof-upload:
         bucket: Bucket
       preferences:
         max_file_size: Maximální velikost souboru (v kB)
-        mime_types: 'Nastav své MIME type mapování'
+        mime_types: 'Nastav MIME typ a adaptér pro nahrávání'
         title: Obecná nastavení
       resize:
         max_width: Maximální šířka
@@ -75,7 +75,7 @@ fof-upload:
       qiniu: QiNiu
   forum:
     buttons:
-      attach: Přidat
+      attach: Nahrát
     states:
       error: Chyba
       loading: Nahrávám

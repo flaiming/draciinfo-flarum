@@ -1,14 +1,14 @@
 fof-polls:
   admin:
     permissions:
-      moderate: Měnit a mazat ankety
-      self_edit: Upravovat své ankety
+      moderate: Upravit a mazat ankety
+      self_edit: Umožnit uživateům upravovat své ankety
       start: Založit anketu
-      vote: Volit v anketě
+      vote: Hlasovat v anketě
 
   forum:
     days_remaining: Anketa končí v {time}.
-    no_permission: Nemáš volební právo
+    no_permission: Nemáš právo hlasovat
     poll_ended: Tato anketa už skončila
     public_poll: Zobrazit hlasující
 
@@ -27,7 +27,7 @@ fof-polls:
       no_voters: Žádné hlasy
       option_placeholder: Odpověď
       options_label: Odpovědi
-      public_poll_label: Povolit uživatelům podívat se kdo volil
+      public_poll_label: Povolit uživatelům podívat se kdo hlasoval
       question_placeholder: Otázka
       submit: Odeslat
 
