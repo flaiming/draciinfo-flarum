@@ -119,12 +119,12 @@ clarkwinkelmann-catch-the-fish:
     admin:
         settings:
             title: Nastavení rybolovu
-            discussion-age: Do jak starých diskuzí lze ryby nastražit (dny)
-            post-age: Do jak starých příspvků lze nastražit ryby (dny)
-            user-age: Jak minimálně dlouho musí být uživatel aktivní, aby mohla být do jeho profilu nastražena ryba (dny)
+            discussion-age: Rybu nelze nastražit do diskuzí neaktivních více než (dny)
+            post-age: Rybu nelze nastražit do příspěvků neaktivních více než (dny)
+            user-age: Rybu nelze nastražit do profilů neaktivních více než (dny)
             time-to-place: Čas k nastražení ryby než uplave a schová se sama (minuty)
             alert-round: Zobrazit název kola a zbývající čas na hlavní stránce
-            animate-flip: Zrcadit obrázek ryby podle směru
+            animate-flip: Zrcadit obrázek ryby podle směru plavby
 
         permissions:
             visible: Vidět ryby
