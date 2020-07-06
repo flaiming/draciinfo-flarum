@@ -50,7 +50,7 @@ fof-byobu:
             pd_reply_text: "{username} přispěl(a) do soukromé diskuze kterou sleduješ"
             pd_text: "{username} s tebou začal(a) novou soukromou diskuzi"
             pd_user_left_label: Příjemce opustil soukromou diskuzi kterou sleduji
-            pd_user_left_text: "{username} opustil(a) soukromou diskuzi
+            pd_user_left_text: "{username} opustil(a) soukromou diskuzi"
             pd_added_text: "{username} tě přidal(a) do soukromé diskuze"
             pd_added_label: "Někdo si mě přidal do existující soukromé diskuze"
             pd_made_public_label: "Soukromá diskuze byla zveřejněna"
