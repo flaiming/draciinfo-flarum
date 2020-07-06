@@ -1,87 +1,87 @@
 fof-upload:
   admin:
     buttons:
-      save: Save settings
+      save: Uložit nastavení
     help_texts:
       description: |
-        Set up uploading services and preferences.
+        Nastavení nahrávacích služeb
       disable-download-logging: |
-        Disable logging every download made by users of your forum. Keeping it enabled allows you to view the number of downloads and other metrics in the nearby future.
+        Vypne logování všech stahování na fóru. Pokud necháš zapnuté, můžeš v blízké budoucnosti vidět statistiky a počty stažení
       disable-hotlink-protection: |
-        Hotlink protection prevents opening downloads from other sites. Current method requires a csrf token and post id.
+        Ochrana proti stahování souborů z cizích stránek. Aktuální metoda vyžaduje csrf token a post id.
       download_templates: |
-        Download templates are how uploads are shown on your forum, eg like previews, buttons. Currently available:
+        Šablony určují jak budou soubory vidět ve fóru, například jako náhledy, tlačítka apod. Zatím jsou dostupné:
       mime_types: |
-        Please configure your mapping here. Each mime type regular expression will be handled by a specific upload adapter and download template.
+        Tady si přes regulérní příkazy můžeš namapovat upload adapter a šablonu pro každý nahraný MIME type.
       resize: |
-        Choose whether you want to resize your images before they get uploaded. You can choose a maximum width and height, in pixels. The resizing process keeps the aspect ratio of the images.
+        Vyber, jestli chceš obrázky při nahrání zmenšit. Můžeš zadat maximální šířku a výšku v pixelech. Změna velikosti zachovává poměr stran.
       watermark: |
-        Choose whether images will have a watermark added during upload. Watermarks are added to non-gifs based on your preferences below.
+        Vyber, jestli se obrázky nahrají s vodoznakem. Vodoznaky jsou přidávány podle nastavení níže. Neplatí pro GIF.
     labels:
       aws-s3:
         bucket: Bucket
         key: Key
-        region: Region
+        region: Oblast
         secret: Secret
-        title: AWS S3 storage settings
+        title: Nastavení úložiště AWS S3
       disable-download-logging:
-        title: Disable logging downloads
-        toggle: Disable
+        title: Nelogovat stahování
+        toggle: Vypnout
       disable-hotlink-protection:
-        title: Disable hotlink protection
-        toggle: Disable
+        title: Vypnout hotlink ochranu
+        toggle: Vypnout
       imgur:
         client_id: Imgur client ID
-        title: Imgur image storage settings
+        title: Nastavení úložiště obrázků Imgur
       local:
         cdn_url: Content Delivery URL (prefixes files)
-        title: Local storage settings
+        title: Nastavení místního úložiště
       qiniu:
-        title: Qiniu storage settings
+        title: Nastavení úložiště Qiniu
         key: Key
         secret: Secret
         bucket: Bucket
       preferences:
-        max_file_size: Maximum file size (in kilobytes)
-        mime_types: 'Configure your mime type, upload adapter mapping'
-        title: General preferences
+        max_file_size: Maximální velikost souboru (v kB)
+        mime_types: 'Nastav MIME typ a adaptér pro nahrávání'
+        title: Obecná nastavení
       resize:
-        max_width: Maximum image width
-        title: Image resize
-        toggle: Resize images
+        max_width: Maximální šířka
+        title: Zmenšení
+        toggle: Zmenšovat obrázky
       watermark:
-        file: Upload your watermark image
-        position: Watermark position
-        title: Watermark images
-        toggle: Watermark images
+        file: Nahraj svůj vodoznak
+        position: Pozice vodoznaku
+        title: Vodoznak
+        toggle: Přidat vodoznak
     permissions:
-      download_label: Download files
-      upload_label: Upload files
+      download_label: Stahovat soubory
+      upload_label: Nahrávat soubory
     templates:
-      file: Default file download template
+      file: Přednastavená šablona stažení souboru
       file_description: |
-        Shows the file name and some general information. Proxies downloads through php, allowing for statistics gathering and hotlink protection.
+        Zobrazuje název souboru a základní informace. Stahování probíhá přes php, lze tedy dělat statistiky a chránit před hotlinky.
       image: Default image download template
       image-preview: Complete image preview template
       image-preview_description: |
-        Shows the complete image in-line. No download functionality, no statistics are gathered and hotlink protection is ignored.
+        Vložit plný obrázek. Bez možnosti stažení, statistik a ochrany proti hotlinkování.
       image_description: |
-        Shows a thumbnail of the image and proxies download through php. Allowing statistics to be gathered and hotlink protection.
+        Zobrazuje náhled obrázku a stažení probíhá přes php, lze tedy dělat statistiky a chránit před hotlinky.
     upload_methods:
       aws-s3: Amazon S3
       imgur: Imgur
-      local: Local
+      local: Místní
       ovh-svfs: OVH SVFS
       qiniu: QiNiu
   forum:
     buttons:
-      attach: Attach
+      attach: Nahrát
     states:
-      error: Error
-      loading: Uploading
-      unauthorized: You are not allowed to download files
+      error: Chyba
+      loading: Nahrávám
+      unauthorized: Nemáš oprávnění stahovat soubory
   api:
     upload_errors:
-      forbidden_type: Uploading files of this type is not allowed.
-      unsupported_type: 'Upload adapter does not support the provided mime type: {mime}.'
-      could_not_detect_mime: Could not detect the MIME type of this file, please try again.
+      forbidden_type: Nahrání tohoto typu souboru není povolené
+      unsupported_type: 'Upload adapter nepodporuje poskytnutý mime type: {mime}.'
+      could_not_detect_mime: Nelze detekovat MIME type tohoto souboru, zkus to prosím znovu.

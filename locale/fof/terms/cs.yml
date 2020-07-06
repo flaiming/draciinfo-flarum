@@ -1,53 +1,53 @@
 fof-terms:
     admin:
         settings:
-            title: Terms Settings
+            title: Nastavení podmínek
 
             field:
-                signup-legal-text: Additional text on signup form
-                hide-updated-at: Do not show the date of update of the terms when an update is available
-                date-format: Date format
-                date-format-help: You can use any valid <a>Moment.js</a> format. Leave field empty for default.
+                signup-legal-text: Doplňkový text na registračním formuláři
+                hide-updated-at: Nezobrazovat datum změny podmínek když je dostupná novější verze
+                date-format: Formát data
+                date-format-help: Můžeš použít jakýkoli platný <a>Moment.js</a> formát. Nech prázdné pro výchozí.
 
         titles:
-            policies: Policies
+            policies: Politiky
 
         buttons:
-            new-policy: New Policy
-            edit-policy: Edit Policy
-            add-policy: Add Policy
-            save-policy: Save Policy
-            delete-policy: Delete Policy
-            set-to-now: Set to now
+            new-policy: Nová politika
+            edit-policy: Upravit politiku
+            add-policy: Přidat politiku
+            save-policy: Uložit politiku
+            delete-policy: Smazat politiku
+            set-to-now: Nastavit na teď
 
         messages:
             delete-policy-confirmation: >
-                This will permanently delete the policy {name} and the associated accept dates from the database.
-                Please make sure you made a backup of those dates if you need them for legal reasons.
-                Are you sure you want to delete this policy ?
+                Tímto se trvale smaže politika {name} a přidružené souhlasy z databáze.
+                Ujisti se že máš zálohy těchto dat kdyby byla potřeba z právních důvodů.
+                Opravdu chceš smazat tuto politiku ?
 
         policies:
-            name: Name
-            name-help: This name will be shown beside the checkbox and as the title of the update modal.
+            name: Název
+            name-help: Tento název bude zobrazen vedle zaškrtávacího políčka a jako titulek oznámení.
             url: URL
-            url-help: The URL to the page where you can read the terms. Will open in a new tab when clicked.
-            update-message: Update Message
-            update-message-help: A message to show to existing users who have not yet accepted the latest terms.
-            terms-updated-at: Updated at
+            url-help: Adresa URL stránky, kde jsou podmínky k přečtení. Otevírá se v novém panelu.
+            update-message: Oznámení o změně
+            update-message-help: Zpráva zobrazená existujícím uživatelům, kteří ještě nepřijali nejnovější verzi podmínek.
+            terms-updated-at: Změněn v
             terms-updated-at-placeholder: YYYY-MM-DD (hh:mm:ss)
             terms-updated-at-help: >
-                The date of the last terms update.
-                Setting this value will require all users who accepted prior to that date to accept again.
-                Must be in the past (otherwise users would never be able to accept after the date and get past the modal).
-            export-url: Export URL
+                Datum poslední změny podmínek.
+                Změnou tohoto data budou všichni uživatelé nuceni potvrdit nové podmínky.
+                Musí být datum v minulosti (jinak nelze podmínky potvrdit a uživatelé se nedostanou přes oznámení).
+            export-url: Exportovat URL
             export-url-help: >
-                Any user with permission "Export all policies data" can access those URLs to download the list of users who accepted this policy.
-                You can find more details about the available options on the <a>extension wiki</a>.
+                Každý uživatel s oprávněním "Exportovat data uživatelských politik" může přistupovat na adresy ke stažení seznamu uživatelů, kteří přijali tyto politiky.
+                O dalších možnostech se můžeš dočíst na <a>wiki doplňku</a>.
 
         permissions:
-            see-user-policies-state: See the user policies state
-            postpone-policies-accept: Can postpone accepting the new terms
-            export-policies: Export all users and policies data
+            see-user-policies-state: Vidět stav uživatelských politik
+            postpone-policies-accept: Odložit potvrzení nových podmínek
+            export-policies: Exportovat data uživatelských politik
 
     forum:
         signup:
@@ -55,22 +55,22 @@ fof-terms:
             must-accept: Musíte souhlasit s {policy}.
 
         accept-modal:
-            title: Terms Update
-            updated-at: The terms were updated on {date}
-            updated-recently: The terms were updated since your last visit
-            i-accept: I accept the new <a>{policy}</a>
-            accept: Confirm
-            close: You can now close this modal
+            title: Změna podmínek
+            updated-at: Podmínky se změnily {date}
+            updated-recently: Od tvé poslední návštěvy se změnily podmínky
+            i-accept: Přijímám <a>{policy}</a>
+            accept: Potvrdit
+            close: Nyní můžete zavřít toto oznámení
 
         state-modal:
-            title: Terms accept state for user {username}
-            accepted-at: Accepted at {date}
-            not-accepted: Not accepted
+            title: Stav přijetí podmínek uživatele {username}
+            accepted-at: Přijal(a) v {date}
+            not-accepted: Nepřijal(a)
 
         update-alert:
-            must-accept-message: We've temporarily restricted access to your account while you check out the new terms.
-            can-accept-message: We recently updated the terms. You must accept them to continue using this website.
-            review: Click here to review and accept the new terms
+            must-accept-message: Dokud neodsouhlasíš nové podmínky, budeš mít omezený přístup k účtu.
+            can-accept-message: Nedávno jsme změnili podmínky. Musíš je přijmout abys mohl(a) pokračovat.
+            review: Klikni zde pro zobrazení a potvrzení nových podmínek
 
         user_controls:
-            state_button: Terms accept state
+            state_button: Stav přijetí podmínek

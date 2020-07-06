@@ -1,17 +1,17 @@
 clarkwinkelmann-author-change:
     forum:
         controls:
-            edit: Edit Author
+            edit: Změnit autora
         modal:
-            title-post: Edit Post Author
-            title-discussion: Edit Discussion Author
-            submit: Save
-            cancel: Cancel
+            title-post: Změnit autora příspěvku
+            title-discussion: Změnit autora diskuze
+            submit: Uložit
+            cancel: Zrušit
         search:
-            placeholder: Search users
-            type-more: Type 3 characters to search database
-            no-results: No results
+            placeholder: Hledat uživatele
+            type-more: Napiš alespoň 3 znaky k hledání
+            no-results: Žádné výsledky
 
     admin:
         permissions:
-            edit: Update discussion and post author
+            edit: Měnit autora diskuze a příspěvku

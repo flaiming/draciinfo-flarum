@@ -1,19 +1,19 @@
 fof-pretty-mail:
   admin:
     nav:
-      desc: Customize your HTML email templates.
+      desc: Uprav si šablonu svého HTML emailu.
     settings:
-      label: Email Templates
-      reset: Revert to Default
-      confirm: Are you sure you want to revert to the stock email template for
-      default: Default Template
-      newPost: Flarum/subscriptions New Post Email
-      userMentioned: Flarum/mentions User Mentioned Email
-      postMentioned: Flarum/mentions Post Mentioned Email
-      notifications: Notification templates
-      notificationHelp: 'It is recommended to use "$forumStyle" for these emails as they may contain BBCODE. These emails also have "$user" available which contains the entire user model of the user being emailed.'
-      help: '"$body" will contain the actual content of the email, "$forumStyle" contains the <strong>entire forum CSS</strong>, "$baseUrl" contains your forum URL, "$settings" allows you to interact with the SettingsRepositoryInterface, and "$link" contains the link within the email. See each template for how to use each variable.'
+      label: Šablona emailu
+      reset: Vrátit na základní
+      confirm: Opravdu chceš obnovit základní šablonu?
+      default: Základní šablona
+      newPost: Email o novém příspěvku
+      userMentioned: Email o zmínce uživatele
+      postMentioned: Email o zmínce příspěvku
+      notifications: Šablony oznámení
+      notificationHelp: 'Je doporučeno použít "$forumStyle" pro tyto emaily, protože mohou obsahovat BBCODE. V těchto emailech také můžeš použít výraz "$user" který obsahuje kompletní model adresovaného uživatele.'
+      help: '"$body" bude obsahovat obsah emailu, "$forumStyle" obsahuje <strong>celé CSS fóra</strong> fóra, "$baseUrl" obsahuje URL adresu fóra, "$settings" ti dovoluje pracovat s SettingsRepositoryInterface a "$link" obsahuje odkaz v emailu. Prozkoumej jednotlivé šablony pro zjištění, jak se proměnné používají.'
     css_settings:
-      label: CSS settings
-      help: You can choose to include the forum's CSS in the email's HTML code. If you enable this, you may have issues with certain email providers.
-      switch_label: Include full forum CSS
+      label: Nastavení CSS
+      help: Můžeš vložit CSS soubor celého fóra do HTML kódu emailu. Pokud toto zapneš, můžou se vyskytnout problémy u některých poskytovatelů emailu.
+      switch_label: Přiložit CSS celého fóra

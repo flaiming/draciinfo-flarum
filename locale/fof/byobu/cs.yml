@@ -2,88 +2,88 @@ fof-byobu:
     forum:
         badges:
             is_private:
-                tooltip: Private discussion
+                tooltip: Soukromá diskuze
         buttons:
-            add_recipients: Recipients
+            add_recipients: Příjemci
             submit: OK
-            edit_recipients: Edit Recipients
-            send_pd: "Send {username} a message"
-            cancel: Cancel
-            remove_from_discussion: Leave this private discussion
-            make_public: Make this discussion public
+            edit_recipients: Upravit příjemce
+            send_pd: "Pošli {username} zprávu"
+            cancel: Zrušit
+            remove_from_discussion: Opustit tuto soukromou diskuzi
+            make_public: Zveřejnit tuto diskuzi
         composer_private_discussion:
-            submit_button: Post Private Discussion
-            title_placeholder: Private Discussion Title
+            submit_button: Založit soukromou diskuzi
+            title_placeholder: Název soukromé diskuze
         labels:
-            recipients: "{count} Recipient|{count} Recipients"
-            user_deleted: -deleted-
+            recipients: "Příjemců: {count}|Příjemců: {count}"
+            user_deleted: -smazán-
         nav:
-            start_button: New Private Discussion
+            start_button: Nová soukromá diskuze
         input:
-            search_recipients: Search recipient by typing first three characters...
+            search_recipients: Pro hledání napiš alespoň tři znaky...
         search:
             headings:
-                groups: Permission Groups
+                groups: Skupiny oprávnění
         modal:
             titles:
-                update_recipients: Update recipients of {title}
-                add_recipients: Add recipients to your discussion
+                update_recipients: Změnit příjemce od {title}
+                add_recipients: Přidat příjemce do diskuze
             help:
-                add_recipients: This discussion will only be visible to the users you choose here. At least 1 recipient (other than yourself) is required.
-                update_recipients: This discussion will only be visible to the users you choose here.
+                add_recipients: Diskuze bude viditelná jen pro uživatele, které si zde vybereš. Je vyžadován alespoň jeden další příjemce kromě tebe.
+                update_recipients: Diskuze bude viditelná jen pro uživatele, které si zde vybereš.
         post:
             recipients_modified:
-                added_and_removed: "{username} added recipients {added} and removed {removed}."
-                added: "{username} added recipients {added}."
-                removed: "{username} removed recipients {removed}."
-                removed_self: "{username} left the private discussion."
+                added_and_removed: "{username} přidal(a) příjemce {added} a odstranil(a) {removed}."
+                added: "{username} přidal(a) příjemce {added}."
+                removed: "{username} odstranil(a) příjemce {removed}."
+                removed_self: "{username} opustil(a) soukromou diskuzi."
         user:
             settings:
-                block_pd: Block private discussions
+                block_pd: Blokovat soukromé diskuze
 
-            byobu_link: Private Discussions
-            dropdown_label: Private Discussions
+            byobu_link: Soukromé diskuze
+            dropdown_label: Soukromé diskuze
 
         notifications:
-            pd_label: Someone includes me in a new private discussion
-            pd_reply_label: Someone posts in a private discussion I'm a recipient of
-            pd_reply_text: "{username} posted in a private discussion you're a part of"
-            pd_text: "{username} started a new private discussion with you"
-            pd_user_left_label: A recipient user leaves a private discussion I'm a part of
-            pd_user_left_text: "{username} left the private discussion"
-            pd_added_text: "{username} added you to a private discussion"
-            pd_added_label: "Someone adds me to an existing private discussion"
-            pd_made_public_label: "A private discussion is made public"
-            pd_made_public_text: "{username} made the discussion public"
+            pd_label: Někdo si mě přidal do nové soukromé diskuze
+            pd_reply_label: Někdo přispěl do soukromé diskuze kterou sleduji
+            pd_reply_text: "{username} přispěl(a) do soukromé diskuze kterou sleduješ"
+            pd_text: "{username} s tebou začal(a) novou soukromou diskuzi"
+            pd_user_left_label: Příjemce opustil soukromou diskuzi kterou sleduji
+            pd_user_left_text: "{username} opustil(a) soukromou diskuzi
+            pd_added_text: "{username} tě přidal(a) do soukromé diskuze"
+            pd_added_label: "Někdo si mě přidal do existující soukromé diskuze"
+            pd_made_public_label: "Soukromá diskuze byla zveřejněna"
+            pd_made_public_text: "{username} zveřejnil(a) soukromou diskuzi"
 
         confirm:
-            make_public: This will make this private discussion visible to everyone. Consider if this is the correct action before proceeding.
+            make_public: Tímto se soukromá diskuze zveřejní pro VŠECHNY uživatele. Zvaž jestli je to dobrý nápad než budeš pokračovat.
 
     admin:
         permission:
-            create_private_discussions_with_users: Create private discussions with users
-            create_private_discussions_with_groups: Create private discussions with groups
-            create_private_discussions_with_blocking_users: Create private discussions with users that block it
-            edit_user_recipients: Edit users partaking in private discussions
-            edit_group_recipients: Edit groups partaking in private discussions
-            make_private_into_public: Transform a private discussion into a public discussion
-            view_private_discussions-when-flagged: View private discussions of other users if flagged
+            create_private_discussions_with_users: Vytvořit soukromou diskuzi s uživateli
+            create_private_discussions_with_groups: Vytvořit soukromou diskuzi se skupinami
+            create_private_discussions_with_blocking_users: Vytvořit soukromou diskuzi s uživateli, kteří ji mají blokovanou
+            edit_user_recipients: Upravit příjemce v soukromých diskuzích
+            edit_group_recipients: Upravit skupiny v soukromých diskuzích
+            make_private_into_public: Převést soukromou diskuzi na veřejnou
+            view_private_discussions-when-flagged: Zobrazit nahlášené soukromé diskuze jiných uživatelů
 
         settings:
-            use_tag_slug: Specify the tag that all private discussions must use
-            use_tag_slug_help: 'Select "{no_restriction}" to allow users to select their own tag. This applies to newly created private discussions only.'
-            use_tag_slug_no_restriction: "- No restriction -"
-            byobu_index: Display a link to Private Discussions on the index page
-            byobu_index_help: When this option is enabled, a link from the forum main nav items to Private Discussions will be displayed
+            use_tag_slug: Vyber štítek, který budou mít všechny soukromé diskuze
+            use_tag_slug_help: 'Vyber "{no_restriction}" aby si uživatelé mohli zvolit vlastní štítek. Vztahuje se jen na nově vytvořené diskuze.'
+            use_tag_slug_no_restriction: "- Bez omezení -"
+            byobu_index: Zobrazit odkaz na soukromé diskuze na hlavní stránce
+            byobu_index_help: Pokud je volba zapnutá, odkaz na soukromé diskuze bude vidět v navigaci fóra
 
     notifications:
         private_discussion_created:
-            title: "[Private Discussion] user started a new private discussion with you"
+            title: "[Soukromá diskuze] uživatel s tebou začal novou soukromou diskuzi"
         private_discussion_replied:
-            title: "[Private Discussion] user posted in a private discussion"
+            title: "[Soukromá diskuze] uživatel přispěl do soukromé diskuze"
         recipient_removed:
-            title: "[Private Discussion] user left the discussion"
+            title: "[Soukromá diskuze] uživatel opustil soukromou diskuzi"
         private_discussion_added:
-            title: "[Private Discussion] user added you to a private discussion"
+            title: "[Soukromá diskuze] uživatel tě přidal do soukromé diskuze"
         made_public:
-            title: "[Private Discussion] user made the discussion public"
+            title: "[Soukromá diskuze] uživatel zveřejnil soukromou diskuzi"

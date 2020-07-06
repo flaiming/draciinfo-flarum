@@ -1,12 +1,12 @@
 fof-recaptcha:
   admin:
     settings:
-      help_text: Obtain your Google reCAPTCHA credentials <a>here</a>.
+      help_text: Získej své přihlašovací údaje k Google reCAPTCHA <a>sem</a>.
 
-      type_label: reCAPTCHA Type
+      type_label: Typ reCAPTCHA
 
       site_key_label: Site Key
       secret_key_label: Secret Key
 
 validation:
-  recaptcha: reCAPTCHA validation failed.
+  recaptcha: reCAPTCHA ověření selhalo.

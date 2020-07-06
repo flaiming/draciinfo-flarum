@@ -1,41 +1,41 @@
 fof-follow-tags:
   forum:
     settings:
-      notify_new_discussion_label: Someone creates a discussion in a tag I'm following
-      notify_new_post_label: Someone posts in a tag I'm following
+      notify_new_discussion_label: Někdo založil diskuzi s tagem který sleduji
+      notify_new_post_label: Někdo přispěl v tagu který sleduji
 
 
     index:
-      follow_tag_button: Follow
-      unfollow_tag_button: Stop Following
+      follow_tag_button: Sledovat
+      unfollow_tag_button: Nesledovat
 
 
     sub_controls:
       follow_button: => fof-follow-tags.ref.follow
       following_button: => fof-follow-tags.ref.following
-      following_text: Be notified of all new discussions.
+      following_text: Oznamovat všechny nové diskuze.
       hiding_button: => fof-follow-tags.ref.hiding
-      hiding_text: Hide discussions from All Discussions page.
+      hiding_text: Skrývat diskuze ze stránky Všechy diskuze.
       ignoring_button: => fof-follow-tags.ref.ignoring
-      ignoring_text: Never be notified.
+      ignoring_text: Nikdy neoznamovat.
       lurking_button: => fof-follow-tags.ref.lurking
-      lurking_text: Be notified of all new discussions and replies.
-      not_following_button: Not Following
-      not_following_text: "Be notified only when @mentioned."
-      notify_alert_tooltip: Get a forum notification when there are new discussions or posts
-      notify_email_tooltip: Get an email when there are new discussions or posts
+      lurking_text: Oznamovat nové diskuze a odpovědi.
+      not_following_button: Nesleduji
+      not_following_text: "Oznamovat jen @zmínky."
+      notify_alert_tooltip: Při zalození diskuze nebo odpovědi dostaneš oznámení na fóru
+      notify_email_tooltip: Při založení diskuze nebo odpovědi dostaneš email
 
     notifications:
-      new_discussion_text: "{username} started"
-      new_post_text: "{username} posted"
+      new_discussion_text: "{username} založil"
+      new_post_text: "{username} přispěl"
 
   email:
-    newDiscussionInTag: "[Tag | New Discussion] title"
-    newPostInTag: "[Tag | New Post] title"
+    newDiscussionInTag: "[Tag | Nová diskuze] název"
+    newPostInTag: "[Tag | Nový příspěvek] název"
 
   ref:
-    follow: Follow
-    following: Following
-    hiding: Hiding
-    ignoring: Ignoring
-    lurking: Lurking
+    follow: Sledovat
+    following: Sleduji
+    hiding: Skrývám se
+    ignoring: Ignoruji
+    lurking: Nahlížím

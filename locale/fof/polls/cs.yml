@@ -1,44 +1,44 @@
 fof-polls:
   admin:
     permissions:
-      moderate: Edit & remove polls
-      self_edit: Allow users to edit their own polls
-      start: Start a poll
-      vote: Vote on polls
+      moderate: Upravit a mazat ankety
+      self_edit: Umožnit uživateům upravovat své ankety
+      start: Založit anketu
+      vote: Hlasovat v anketě
 
   forum:
-    days_remaining: Poll ends {time}.
-    no_permission: You don't have permission to vote
-    poll_ended: This poll has ended.
-    public_poll: View voters
+    days_remaining: Anketa končí v {time}.
+    no_permission: Nemáš právo hlasovat
+    poll_ended: Tato anketa už skončila
+    public_poll: Zobrazit hlasující
 
     composer_discussion:
-      add_poll: Add Poll
+      add_poll: Přidat anketu
       edit_poll: => fof-polls.forum.moderation.edit
 
     modal:
-      add_title: Add a Poll
-      add_option_label: Add an Option
-      date_placeholder: Poll end date (Optional)
-      edit_title: Edit Poll
-      include_question: You must include a question
-      max: You can have a maximum of 10 answers
-      min: You must include a minimum of 2 answers
-      no_voters: No Votes
-      option_placeholder: Answer
-      options_label: Answers
-      public_poll_label: Allow people to see who voted
-      question_placeholder: Question
-      submit: Submit
+      add_title: Přidat anketu
+      add_option_label: Přidat možnost
+      date_placeholder: Datum konce ankety (nepovinné)
+      edit_title: Upravit anketu
+      include_question: Musíš napsat otázku
+      max: Anketa může mít nejvíce 10 možností
+      min: Anketa musí mít alespoň 2 možnosti
+      no_voters: Žádné hlasy
+      option_placeholder: Odpověď
+      options_label: Odpovědi
+      public_poll_label: Povolit uživatelům podívat se kdo hlasoval
+      question_placeholder: Otázka
+      submit: Odeslat
 
     moderation:
-      delete: Remove Poll
-      delete_confirm: Are you sure you want to delete this poll?
-      edit: Edit Poll
+      delete: Smazat anketu
+      delete_confirm: Opravdu chceš smazat tuto anketu?
+      edit: Upravit anketu
 
     tooltip:
-      badge: Poll
-      votes: "1 vote|{count} votes"
+      badge: Anketa
+      votes: "1 hlas|{count} hlasů"
 
     votes_modal:
-      title: Voters
+      title: Hlasující
