@@ -4,7 +4,7 @@ fof-masquerade:
             profile-completion-required: >
                 Vyplňte prosím níže požadované údaje.
         buttons:
-            view-profile: Zobrazit profil
+            view-profile: Profil
             save-profile: Uložit
         fields:
             select:
@@ -35,7 +35,7 @@ fof-masquerade:
                 Veřejně viditelný název pole (nepřekládá se).
             description: Popis pole
             description-help: >
-                Nepovinný popis, jež vysvětluje účel tohoto pole. 
+                Nepovinný popis vysvětlující účel tohoto pole. 
             required: Označit pole jako povinné
             on_bio: Zobrazit odpověď v kartě uživatele 
             type: Typ
@@ -48,7 +48,7 @@ fof-masquerade:
                 Zobraz tuto předponu před odpovědí uživatele pro toto pole.
             icon: Ikona
             icon-help: >
-                Zobraz ikonu před hodnotou vyplněnou uživatelem. Pro přehled
+                Ikona zobrazená před hodnotou vyplněnou uživatelem. Pro přehled
                 o dostupných ikonách navštivte <a>web FontAwesome</a>. Používejte názvy ikon
                 s předponou "fa-", například "fas fa-info".
             force-user-to-completion: Vynutit vyplnění profilu
@@ -58,7 +58,7 @@ fof-masquerade:
             option-coma-warning: Název možnosti nemůže obsahovat čárku (",").
         types:
             advanced: Pokročilý
-            boolean: Checkbox
+            boolean: Ano/Ne
             email: Email
             select: Výběr z možností
             url: Url adresa
