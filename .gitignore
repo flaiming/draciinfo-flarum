@@ -16,4 +16,4 @@ public/assets/*
 public/secret/
 vendor/
 migration/
-
+packages/
