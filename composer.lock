@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6f51383499e1f30545e190e2b5065bef",
+    "content-hash": "45c92a4933a9bd96a64eaaa45dca5d71",
     "packages": [
         {
             "name": "antoinefr/flarum-ext-online",
@@ -218,6 +218,62 @@
                 "sourcemap"
             ],
             "time": "2018-04-16T13:23:46+00:00"
+        },
+        {
+            "name": "clarkwinkelmann/catch-the-fish",
+            "version": "0.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/clarkwinkelmann/catch-the-fish.git",
+                "reference": "59b09b2f946783096a571f982d51bc789cedc5c4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/clarkwinkelmann/catch-the-fish/zipball/59b09b2f946783096a571f982d51bc789cedc5c4",
+                "reference": "59b09b2f946783096a571f982d51bc789cedc5c4",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^0.1.0-beta.8"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-extension": {
+                    "title": "Catch the fish",
+                    "icon": {
+                        "name": "fas fa-fish",
+                        "backgroundColor": "#90d71b",
+                        "color": "#166b14"
+                    }
+                },
+                "flagrow": {
+                    "discuss": "https://discuss.flarum.org/d/19532"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ClarkWinkelmann\\CatchTheFish\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Clark Winkelmann",
+                    "email": "clark.winkelmann@gmail.com",
+                    "homepage": "https://clarkwinkelmann.com/"
+                }
+            ],
+            "description": "Watch your users catch as many fishes as they can",
+            "keywords": [
+                "MiniGame",
+                "april-fools",
+                "extension",
+                "flarum"
+            ],
+            "time": "2019-04-20T17:25:42+00:00"
         },
         {
             "name": "clarkwinkelmann/flarum-ext-author-change",
@@ -8990,6 +9046,7 @@
     "aliases": [],
     "minimum-stability": "beta",
     "stability-flags": {
+        "fof/masquerade": 20,
         "madnest/flarum-lang-czech": 10,
         "squeevee/flarum-ext-fancybox": 10
     },

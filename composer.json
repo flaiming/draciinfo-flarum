@@ -40,6 +40,7 @@
     },
     "require": {
         "antoinefr/flarum-ext-online": "^0.4.0",
+        "clarkwinkelmann/catch-the-fish": "^0.1.1",
         "clarkwinkelmann/flarum-ext-author-change": "^0.1.5",
         "flarum/approval": "^0.1.0",
         "flarum/auth-facebook": "^0.1.0",
@@ -69,7 +70,7 @@
         "fof/forum-statistics-widget": "^0.1.1",
         "fof/impersonate": "^0.5.0",
         "fof/links": "^0.2.1",
-        "fof/masquerade": "^0.3.3",
+        "fof/masquerade": "*@dev",
         "fof/merge-discussions": "^0.3.3",
         "fof/nightmode": "^0.4.0",
         "fof/pages": "^0.3.1",
@@ -93,5 +94,9 @@
         "sort-packages": true
     },
     "minimum-stability": "beta",
-    "prefer-stable": true
+    "prefer-stable": true,
+    "repositories": [{
+            "type": "path",
+            "url": "packages/*"
+        }]
 }
