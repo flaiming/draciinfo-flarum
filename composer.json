@@ -40,7 +40,9 @@
     },
     "require": {
         "antoinefr/flarum-ext-online": "*",
+        "blomstra/spam-prevention": "^1.5",
         "clarkwinkelmann/flarum-ext-author-change": "*",
+        "clarkwinkelmann/flarum-ext-mass-actions": "^1.1",
         "darkle/fancybox": "^1.1",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
@@ -95,8 +97,5 @@
     "repositories": [{
             "type": "path",
             "url": "packages/*"
-        }],
-    "platform": { 
-     "php": "7.3" 
-   } 
+        }]
 }
