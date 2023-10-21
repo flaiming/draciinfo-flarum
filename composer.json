@@ -41,6 +41,7 @@
     "require": {
         "antoinefr/flarum-ext-online": "*",
         "clarkwinkelmann/flarum-ext-author-change": "*",
+        "darkle/fancybox": "^1.1",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
         "flarum/core": "^v1.0",
@@ -75,13 +76,14 @@
         "fof/recaptcha": "*",
         "fof/spamblock": "*",
         "fof/split": "*",
+        "fof/stopforumspam": "^1.2",
         "fof/terms": "*",
         "fof/upload": "*",
         "fof/user-bio": "*",
         "fof/user-directory": "*",
         "madnest/flarum-lang-czech": "^1.0",
-        "phenomlab/fancybox-wrapper": "^0.8.0",
         "sycho/flarum-profile-cover": "*",
+        "v17development/flarum-blog": "^0.4.0",
         "v17development/flarum-seo": "*"
     },
     "config": {
@@ -93,5 +95,8 @@
     "repositories": [{
             "type": "path",
             "url": "packages/*"
-        }]
+        }],
+    "platform": { 
+     "php": "7.3" 
+   } 
 }
