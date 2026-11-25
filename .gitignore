@@ -20,3 +20,7 @@ packages/
 
 # user-uploaded icons, do not publish (public repo)
 /users/
+
+# DB dumps and DB admin tool, never publish (public repo)
+*.sql
+public/adminer.php
