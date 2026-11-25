@@ -1,0 +1,67 @@
+// Masquerade lays fields out as inline-blocks (label 30%, answer 50%), which
+// bottom-aligns the label next to a long text. Keep its two-column look, but
+// align to the top and let the text use the rest of the row.
+.Masquerade-Bio .Masquerade-Bio-Set.Masquerade-Bio-Set--text {
+  display: flex;
+  align-items: flex-start;
+
+  .Masquerade-Bio-Field {
+    flex: 0 0 auto;
+  }
+
+  .Masquerade-Bio-Answer.Masquerade-Bio-Answer--text {
+    display: block;
+    flex: 1 1 0;
+    width: auto;
+    min-width: 0;
+    padding: .1em .2em;
+    overflow-wrap: anywhere;
+  }
+}
+
+// On the user card (fields shown "on bio") the text goes under the label.
+.UserCard .Masquerade-Bio-Set--text {
+  .Masquerade-Bio-Answer--text {
+    display: block;
+  }
+}
+
+.Masquerade-Bio-Answer--text,
+.MasqueradeTextField-preview {
+  img {
+    max-width: 100%;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.MasqueradeTextField-plain {
+  white-space: pre-line;
+}
+
+.MasqueradeTextField-editor textarea {
+  resize: vertical;
+}
+
+.MasqueradeTextField-preview {
+  margin: 0 0 16px;
+  padding: 10px 12px;
+  border: 1px dashed var(--control-bg);
+  border-radius: var(--border-radius);
+  max-height: 400px;
+  overflow: auto;
+
+  &[hidden] {
+    display: none;
+  }
+}
+
+.MasqueradeTextField-previewLabel {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--muted-color);
+  margin-bottom: 6px;
+}

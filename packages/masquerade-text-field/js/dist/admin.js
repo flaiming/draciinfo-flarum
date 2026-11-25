@@ -1,0 +1,2 @@
+(()=>{"use strict";const e=flarum.reg.get("core","admin/app"),t=flarum.reg.get("core","common/extend"),a=flarum.reg.get("fof-masquerade","admin/components/FieldEditModal");e.initializers.add("flaiming-masquerade-text-field",()=>{(0,t.extend)(a.prototype,"availableTypes",function(t){t.text=e.translator.trans("flaiming-masquerade-text-field.admin.types.text")})})})(),module.exports={};
+//# sourceMappingURL=admin.js.map

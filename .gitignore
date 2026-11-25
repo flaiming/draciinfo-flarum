@@ -16,7 +16,9 @@ public/assets/*
 public/secret/
 vendor/
 migration/
-packages/
+packages/*
+!packages/masquerade-text-field/
+packages/masquerade-text-field/js/node_modules/
 
 # user-uploaded icons, do not publish (public repo)
 /users/

@@ -1,0 +1,6 @@
+flaiming-masquerade-text-field:
+  admin:
+    types:
+      text: Formátovaný text (víceřádkový, Markdown)
+  forum:
+    preview: Náhled

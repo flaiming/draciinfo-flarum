@@ -1,0 +1,6 @@
+flaiming-masquerade-text-field:
+  admin:
+    types:
+      text: Formatted text (multi-line, Markdown)
+  forum:
+    preview: Preview
