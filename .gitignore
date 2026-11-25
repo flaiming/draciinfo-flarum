@@ -17,3 +17,6 @@ public/secret/
 vendor/
 migration/
 packages/
+
+# user-uploaded icons, do not publish (public repo)
+/users/
