@@ -1,0 +1,882 @@
+# Czech translations for rob006-software/flarum-translations (branch flarum2), the source of flarum-lang/czech,
+# that no flarum-lang/czech release contains yet. Delete this directory once one does.
+core:
+  api:
+    invalid_username_message: 'Uživatelské jméno může obsahovat pouze písmena, číslice a pomlčky a musí obsahovat alespoň jedno písmeno.'
+  email:
+    abandoned_extensions:
+      body_intro: 'Následující nainstalovaná rozšíření byla označena jako opuštěná:'
+      body_outro: 'Zkontrolujte prosím tato rozšíření a tam, kde je to možné, zvažte přechod na alternativy.'
+      line_no_replacement: '{package} (náhrada není k dispozici)'
+      line_with_replacement: '{package} (doporučená náhrada: {replacement})'
+      subject: 'Vyžadována akce: zjištěna opuštěná rozšíření'
+    activate_account:
+      body: |
+        Někdo (doufáme, že vy!) se zaregistroval na fóru {forum} s touto e-mailovou adresou.
+
+        Pokud jste to byli vy, klikněte na následující odkaz a váš účet bude aktivován:
+        {url}
+
+        Pokud jste se nezaregistrovali, ignorujte prosím tento e-mail.
+    confirm_email:
+      body: |
+        Někdo (doufáme, že vy!) změnil na fóru {forum} svou e-mailovou adresu na tuto.
+
+        Pokud jste to byli vy, stačí kliknout na následující odkaz a vaše e-mailová adresa bude potvrzena:
+        {url}
+
+        Pokud jste to nebyli vy, ignorujte prosím tento e-mail.
+    greeting: 'Ahoj, {displayName},'
+    informational:
+      default_title: Informace
+      footer: 'Tento e-mail byl odeslán na adresu {userEmail} jako informace týkající se vašeho účtu na fóru [{forumTitle}]({forumUrl}).'
+      footer_plain: 'Tento e-mail byl odeslán na adresu {userEmail} jako informace týkající se vašeho účtu na fóru {forumTitle}.'
+    notification:
+      default_title: Oznámení
+      footer:
+        main_text: 'Tento e-mail byl odeslán na adresu {email}, protože máte na fóru [{forumTitle}]({forumUrl}) zapnutá oznámení typu „{type}“.'
+        main_text_plain: 'Tento e-mail byl odeslán na adresu {email}, protože máte na fóru {forumTitle} zapnutá oznámení typu „{type}“.'
+        settings_text: 'Nastavení oznámení můžete změnit [zde]({settingsLink}).'
+        settings_text_plain: 'Nastavení oznámení můžete změnit zde: {settingsLink}'
+        unsubscribe_text: 'Pokud už tento typ oznámení nechcete dostávat, [odhlaste se zde]({unsubscribeLink}).'
+        unsubscribe_text_plain: 'Pokud už tento typ oznámení nechcete dostávat, odhlaste se zde: {unsubscribeLink}'
+      types:
+        byobuMadePublic: 'Zveřejnění soukromých diskuzí, kterých se účastníte'
+        byobuPrivateDiscussionAdded: 'Přidání do soukromých diskuzí'
+        byobuPrivateDiscussionCreated: 'Nové soukromé diskuze, do kterých jste přidáni'
+        byobuPrivateDiscussionReplied: 'Nové příspěvky v soukromých diskuzích, kterých se účastníte'
+        byobuRecipientRemoved: 'Odchod příjemců ze soukromých diskuzí, kterých se účastníte'
+        discussionMerged: 'Sloučení vašich diskuzí'
+        newDiscussionInTag: 'Nové diskuze ve sledovaných štítcích'
+        newDiscussionTag: 'Diskuze přeřazené do sledovaných štítků'
+        newPostInTag: 'Nové příspěvky ve sledovaných štítcích'
+    reset_password:
+      body: |
+        Někdo (doufáme, že vy!) požádal na fóru {forum} o obnovení zapomenutého hesla k vašemu účtu.
+
+        Pokud jste to byli vy, klikněte na následující odkaz a nastavte si nové heslo:
+        {url}
+
+        Pokud heslo měnit nechcete, tento e-mail ignorujte a nic se nestane.
+    send_test:
+      body: |
+        Toto je testovací e-mail, který ověřuje, že nastavení e-mailu ve Flarum funguje správně.
+
+        Pokud jste test spustili vy, znamená tento e-mail, že vaše nastavení funguje!
+
+        Pokud jste to nebyli vy, ignorujte prosím tento e-mail.
+    signoff: 'Tým fóra {forumTitle}'
+  forum:
+    discussion_list:
+      skip_discussion_list_pane: 'Přeskočit panel se seznamem diskuzí'
+    header:
+      theme_switcher_accessible_label: 'Změnit barevný režim'
+    index:
+      refresh_tooltip: '=> core.ref.refresh'
+      skip_to_main_content: 'Přejít na hlavní obsah'
+    index_sort:
+      az_button: '=> core.ref.title_az'
+      newest_button: '=> core.ref.newest'
+      oldest_button: '=> core.ref.oldest'
+      relevance_button: '=> core.ref.relevance'
+      za_button: '=> core.ref.title_za'
+    log_in:
+      invalid_login_message: '=> core.ref.invalid_login_message'
+      remember_me_label: '=> core.ref.remember_me_label'
+      too_many_attempts_message: '=> core.ref.too_many_login_attempts_message'
+      username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
+    notifications:
+      delete_all_confirm: 'Opravdu chcete odstranit všechna oznámení? Tuto akci nelze vrátit zpět'
+    post_list:
+      empty_text: 'Vypadá to, že tu nejsou žádné příspěvky.'
+      in_discussion_text: 'V diskuzi {discussion}'
+      load_more_button: '=> core.ref.load_more'
+    posts:
+      meta_title_text: 'Výsledky hledání v příspěvcích'
+      refresh_tooltip: '=> core.ref.refresh'
+    posts_sort:
+      newest_button: '=> core.ref.newest'
+      oldest_button: '=> core.ref.oldest'
+      relevance_button: '=> core.ref.relevance'
+    settings:
+      color_scheme_heading: 'Barevný režim'
+      color_schemes:
+        auto_mode_label: 'Podle systému'
+        dark_hc_mode_label: '=> core.ref.dark_hc_mode_label'
+        dark_mode_label: '=> core.ref.dark_mode_label'
+        light_hc_mode_label: '=> core.ref.light_hc_mode_label'
+        light_mode_label: '=> core.ref.light_mode_label'
+      device_heading: Zařízení
+      haptic_feedback_help: 'Dostupné jen na podporovaných mobilních zařízeních'
+      haptic_feedback_label: 'Zapnout haptickou odezvu'
+      reset_notifications_button: 'Obnovit výchozí nastavení'
+  lib:
+    assets_updated:
+      message: 'Je k dispozici novější verze této stránky.'
+      reload_button: 'Načíst znovu'
+    connection_restored_message: 'Připojení bylo obnoveno.'
+    datetime_formats:
+      fullTime: LLLL
+      humanTimeLong: ll
+      humanTimeShort: 'D. MMM'
+      scrubber: 'MMMM YYYY'
+      userListJoinDate: LLL
+    error:
+      db_error_message: 'Databázový dotaz selhal. Příčinou může být nekompatibilita mezi některým rozšířením a ovladačem vaší databáze.'
+      extension_runtime_failed_message: 'Při běhu rozšíření {extension} došlo k chybě. Podrobnosti najdete v konzoli prohlížeče.'
+      network_message: 'Zdá se, že je problém s připojením. Zkontrolujte prosím síť a zkuste to znovu.'
+      offline_message: 'Zdá se, že jste offline. Zkontrolujte prosím připojení a zkuste to znovu.'
+    gambits:
+      discussions:
+        author:
+          hint: 'uživatelské jméno nebo seznam jmen oddělených čárkou'
+          key: autor
+        created:
+          hint: '2020-12-31 nebo 2020-12-31..2021-09-30'
+          key: vytvořeno
+        hidden:
+          key: skrytá
+        unread:
+          key: nepřečtená
+      group_keys:
+        allows: povoluje
+        has: má
+        is: je
+      posts:
+        discussion:
+          hint: 'ID diskuze'
+          key: diskuze
+      users:
+        email:
+          hint: example@machine.local
+          key: e-mail
+        group:
+          hint: 'název skupiny v jednotném nebo množném čísle'
+          key: skupina
+    group_selector:
+      placeholder: 'Vyberte skupinu'
+    index_sort:
+      az_button: '=> core.ref.title_az'
+      latest_button: '=> core.ref.latest'
+      newest_button: '=> core.ref.newest'
+      oldest_button: '=> core.ref.oldest'
+      relevance_button: '=> core.ref.relevance'
+      top_button: '=> core.ref.top'
+      za_button: '=> core.ref.title_za'
+    input:
+      clear_button: 'Vymazat pole'
+    multi_select:
+      placeholder: 'Vyberte jednu nebo více možností'
+    nav:
+      pin_pane_button: 'Připnout seznam diskuzí'
+    notices:
+      bisecting: 'Probíhá postupné vypínání rozšíření (bisect), které má zjistit, které rozšíření způsobuje problém.'
+      bisecting_continue: 'Pokračovat v hledání'
+      maintenance_mode_low: 'Probíhá údržba. Na fórum mají přístup jen administrátoři.'
+      maintenance_mode_safe: 'Probíhá údržba v nouzovém režimu. Na fórum mají přístup jen administrátoři a žádná rozšíření nejsou načtena.'
+    overflowing_list:
+      toggle_accessible_label: 'Další položky'
+    pagination:
+      back_button: 'Předchozí stránka'
+      first_button: 'Přejít na první stránku'
+      go_to_page_textbox_a11y_label: 'Přejít přímo na stránku číslo'
+      last_button: 'Přejít na poslední stránku'
+      next_button: 'Další stránka'
+      page_counter: 'Stránka {current} z {total}'
+    search:
+      gambit_minus_button_a11y_label: 'Přidat filtr, který výsledky vyloučí'
+      gambit_plus_button_a11y_label: 'Přidat filtr, který výsledky zahrne'
+      no_results_text: 'Vypadá to, že tu nejsou žádné výsledky.'
+      no_search_text: 'Zatím jste nic nehledali.'
+      options_heading: 'Možnosti hledání'
+      placeholder: Hledat…
+      preview_heading: 'Náhled výsledků'
+      search_active_button_accessible_label: 'Změnit hledání: {query}'
+      search_clear_button_accessible_label: 'Vymazat hledaný výraz'
+      title: Hledat
+    search_source:
+      discussions:
+        all_button: 'Hledat „{query}“ ve všech diskuzích'
+        heading: '=> core.ref.discussions'
+      posts:
+        all_button: 'Hledat „{query}“ ve všech příspěvcích'
+        heading: '=> core.ref.posts'
+      users:
+        heading: '=> core.ref.users'
+    user_selection_modal:
+      empty_results: 'Hledání neodpovídá žádný uživatel.'
+      max_items_to_select: '{count, plural, one {Vyberte nejvýše # uživatele} few {Vyberte nejvýše # uživatele} other {Vyberte nejvýše # uživatelů}}'
+      search_placeholder: '=> core.ref.search_users'
+      submit_button: '=> core.ref.okay'
+      title: 'Vyberte uživatele'
+  ref:
+    dark_hc_mode_label: 'Tmavý režim s vysokým kontrastem'
+    dark_mode_label: 'Tmavý režim'
+    invalid_login_message: 'Vaše přihlašovací údaje nejsou správné.'
+    latest: Poslední
+    light_hc_mode_label: 'Světlý režim s vysokým kontrastem'
+    light_mode_label: 'Světlý režim'
+    newest: Nejnovější
+    oldest: Nejstarší
+    refresh: Obnovit
+    relevance: Nejrelevantnější
+    remember_me_label: 'Zapamatovat si mě'
+    title_az: 'Název (A–Z)'
+    title_za: 'Název (Z–A)'
+    too_many_login_attempts_message: 'Příliš mnoho neúspěšných pokusů o přihlášení. Počkejte prosím několik minut a zkuste to znovu.'
+    top: Nejlepší
+    username_or_email_placeholder: 'Uživatelské jméno nebo e-mail'
+  views:
+    error:
+      maintenance_mode_link: 'Přihlášení pro administrátory'
+      maintenance_mode_message: 'Na fóru právě probíhá údržba. Zkuste to prosím později.'
+      maintenance_mode_title: Údržba
+      method_not_allowed: 'Tato stránka nepodporuje tuto metodu požadavku.'
+    layout:
+      skip_to_content: 'Přejít na obsah'
+    log_in:
+      invalid_login_message: '=> core.ref.invalid_login_message'
+      password_placeholder: '=> core.ref.password'
+      remember_me_label: '=> core.ref.remember_me_label'
+      submit_button: '=> core.ref.log_in'
+      title: '=> core.ref.log_in'
+      too_many_attempts_message: '=> core.ref.too_many_login_attempts_message'
+      username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
+    unsubscribe_email:
+      confirm_button: Potvrdit
+      confirm_message: 'Požádali jste o odhlášení e-mailových oznámení typu „{type}“ z fóra {forumTitle}.'
+      immediate_helptext: 'Po potvrzení budete z odběru okamžitě odhlášeni.'
+      invalid_message: 'Tento odkaz pro odhlášení je neplatný nebo už byl použit. E-mailová oznámení z fóra {forumTitle} můžete změnit [ve svém nastavení]({settingsLink}).'
+      return_to_forum: 'Zpět na {forumTitle}'
+      success_message: 'Odběr oznámení typu „{type}“ z fóra {forumTitle} byl zrušen. Pokud je chcete znovu dostávat, [upravte si nastavení]({settingsLink}).'
+      title: 'Potvrzení odhlášení odběru'
+flarum-flags:
+  forum:
+    flag_post:
+      reason_inappropriate_text_no_guidelines: 'Tento příspěvek je urážlivý nebo útočný.'
+flarum-likes:
+  lib:
+    gambits:
+      posts:
+        likedBy:
+          hint: 'ID nebo uživatelské jméno uživatele'
+          key: líbí-se
+flarum-lock:
+  lib:
+    gambits:
+      discussions:
+        locked:
+          key: zamčená
+flarum-mentions:
+  email:
+    group_mentioned:
+      html:
+        body: '{mentioner_display_name} zmínil skupinu, jejímž jste členem, v diskuzi [{title}]({url}).'
+      plain:
+        body: |
+          {mentioner_display_name} zmínil skupinu, jejímž jste členem, v diskuzi {title}.
+
+          {url}
+
+          ---
+
+          {content}
+    post_mentioned:
+      html:
+        body: '{replier_display_name} odpověděl na váš příspěvek (#{post_number}) v diskuzi [{title}]({url}).'
+      plain:
+        body: |
+          {replier_display_name} odpověděl na váš příspěvek (#{post_number}) v diskuzi {title}.
+
+          {url}
+
+          ---
+
+          {content}
+    user_mentioned:
+      html:
+        body: '{mentioner_display_name} se o vás zmínil v příspěvku v diskuzi [{title}]({url}).'
+      plain:
+        body: |
+          {mentioner_display_name} se o vás zmínil v příspěvku v diskuzi {title}.
+
+          {url}
+
+          ---
+
+          {content}
+  lib:
+    gambits:
+      posts:
+        mentioned:
+          hint: 'ID nebo uživatelské jméno zmíněného uživatele'
+          key: zmíněn
+flarum-sticky:
+  lib:
+    gambits:
+      discussions:
+        sticky:
+          key: připnutá
+flarum-subscriptions:
+  email:
+    new_post:
+      html:
+        body: |
+          {poster_display_name} právě přispěl do diskuze, kterou sledujete: [{title}]({url}).
+
+          Další oznámení o této diskuzi nedostanete, dokud si ji nepřečtete.
+      plain:
+        body: |
+          {poster_display_name} právě přispěl do diskuze, kterou sledujete: {title}.
+
+          Novou aktivitu si můžete prohlédnout na tomto odkazu:
+          {url}
+
+          ---
+
+          {content}
+
+          ---
+
+          Další oznámení o této diskuzi nedostanete, dokud si ji nepřečtete.
+  forum:
+    settings:
+      follow_after_create_label: 'Automaticky sledovat diskuze, které založím'
+  lib:
+    gambits:
+      discussions:
+        subscription:
+          following_key: sledovaná
+          ignoring_key: ignorovaná
+flarum-suspend:
+  email:
+    suspended:
+      html:
+        body: 'Na fóru {forumTitle} jste byli pozastaveni z následujícího důvodu:'
+      plain:
+        body: |
+          Byli jste pozastaveni z následujícího důvodu:
+
+          ---
+          {suspension_message}
+          ---
+    unsuspended:
+      html:
+        body: 'Vaše pozastavení bylo zrušeno. Na fórum [{forumTitle}]({forum_url}) se můžete vrátit, kdykoli budete chtít.'
+      plain:
+        body: |
+          Vaše pozastavení bylo zrušeno. Na fórum se můžete vrátit kliknutím na následující odkaz:
+
+          {forum_url}
+  lib:
+    gambits:
+      users:
+        suspended:
+          key: pozastavený
+flarum-tags:
+  forum:
+    deck:
+      column_label: Štítek
+      tag_label: Štítek
+      tag_placeholder: 'Hledat štítek'
+  lib:
+    gambits:
+      discussions:
+        tag:
+          hint: 'název štítku, seznam názvů oddělených čárkou, nebo „untagged“'
+          key: štítek
+fof-analytics:
+  forum:
+    consent:
+      cookies:
+        ga: 'Rozlišuje návštěvy, aby se opakované návštěvy nepočítaly jako noví lidé.'
+        gat: 'Omezuje, jak často se data odesílají do Googlu.'
+        gid: 'Rozlišuje návštěvy, uchovává se 24 hodin.'
+        matomo_sessid: 'Udržuje vaši relaci Matomo, dokud se nahrává.'
+        pk_cvar: 'Ukládá vlastní údaje o aktuální návštěvě.'
+        pk_hsr: 'Zaznamenává aktuální návštěvu pro teplotní mapy a nahrávání relací.'
+        pk_id: 'Rozlišuje návštěvy, aby se opakované návštěvy nepočítaly jako noví lidé.'
+        pk_ref: 'Zaznamenává, jak jste se na web dostali.'
+        pk_ses: 'Sleduje aktuální návštěvu, uchovává se 30 minut.'
+        utm: 'Starší cookies Google Analytics, které zaznamenávají, jak jste se na web dostali.'
+fof-anti-spam:
+  forum:
+    message:
+      honeypot:
+        refused: 'Registraci se nepodařilo dokončit.'
+        reload: 'S registračním formulářem se něco pokazilo. Načtěte prosím stránku znovu a zkuste to ještě jednou.'
+      profile:
+        blocked: 'Vypadá to jako spam, proto to nebylo uloženo. Odstraňte prosím odkazy nebo kontaktní údaje a zkuste to znovu.'
+    post:
+      flagged_as_spam_text: 'Automatická detekce spamu – skóre {score}'
+      held_email_domain_text: 'Čeká na schválení: nový účet s e-mailovou adresou na doméně {domain}'
+    sign_up:
+      trap_label: 'Toto pole nechte prázdné'
+    spammer_modal:
+      success: 'Uživatel {username} byl označen jako spammer.'
+fof-byobu:
+  email:
+    body:
+      made_public: |
+        {actor_display_name} odebral všechny příjemce a diskuzi zveřejnil: {discussion_title}.
+
+        Zobrazit ji můžete zde:
+        {discussion_url}
+
+        Pro otevření odkazu se možná budete muset nejdřív přihlásit.
+      private_discussion_added: |
+        {actor_display_name} vás přidal do existující soukromé diskuze: {discussion_title}.
+
+        Zobrazit ji můžete zde:
+        {discussion_url}
+
+        Pro otevření odkazu se možná budete muset nejdřív přihlásit.
+      private_discussion_created: |
+        {actor_display_name} s vámi jako příjemcem začal novou soukromou diskuzi: {discussion_title}.
+
+        Zobrazit ji můžete zde:
+        {discussion_url}
+
+        Pro otevření odkazu se možná budete muset nejdřív přihlásit.
+      private_discussion_replied: |
+        {actor_display_name} přispěl do soukromé diskuze, jejímž jste příjemcem: {discussion_title}.
+
+        Zobrazit příspěvek můžete zde:
+        {post_url}
+
+        Pro otevření odkazu se možná budete muset nejdřív přihlásit.
+      recipient_removed: |
+        {actor_display_name} opustil soukromou diskuzi: {discussion_title}. Už nebude moci zobrazit nic z jejího obsahu.
+
+        Zobrazit ji můžete zde:
+        {discussion_url}
+
+        Pro otevření odkazu se možná budete muset nejdřív přihlásit.
+  lib:
+    gambits:
+      allows-pd:
+        hint: ano
+        key: povoluje-sd
+      byobu:
+        hint: 'uživatelské nebo zobrazované jméno příjemce'
+        key: byobu
+      private:
+        key: soukromá
+fof-follow-tags:
+  email:
+    newDiscussionInTag:
+      html:
+        body: |
+          {actor_display_name} založil diskuzi ve štítku, který sledujete: [{discussion_title}]({discussion_url})
+      plain:
+        body: |
+          {actor_display_name} založil diskuzi ve štítku, který sledujete: {discussion_title}
+
+          Novou diskuzi si můžete prohlédnout na tomto odkazu:
+          {discussion_url}
+
+          ---
+
+          {content}
+      subject: '[Štítek | Nová diskuze] {title}'
+    newDiscussionTag:
+      html:
+        body: |
+          {actor_display_name} právě přeřadil diskuzi od uživatele {author_display_name} do štítku, který sledujete: [{discussion_title}]({discussion_url})
+      plain:
+        body: |
+          {actor_display_name} právě přeřadil diskuzi od uživatele {author_display_name} do štítku, který sledujete: {discussion_title}
+
+          Diskuzi si můžete prohlédnout na tomto odkazu:
+          {discussion_url}
+
+          ---
+
+          {content}
+      subject: '[Štítek | Změna štítku] {title}'
+    newPostInTag:
+      html:
+        body: |
+          {actor_display_name} přispěl do diskuze ve štítku, který sledujete: [{discussion_title}]({post_url})
+      plain:
+        body: |
+          {actor_display_name} přispěl do diskuze ve štítku, který sledujete: {discussion_title}
+
+          Novou aktivitu si můžete prohlédnout na tomto odkazu:
+          {post_url}
+
+          ---
+
+          {content}
+      subject: '[Štítek | Nový příspěvek] {title}'
+  forum:
+    hero:
+      title: '=> flarum-subscriptions.forum.index.following_link'
+    prompt:
+      choose_button: 'Vybrat štítky ke sledování'
+      continue_button: 'Pokračovat na fórum'
+      later_button: 'Připomenout později'
+      modal_title: 'Vyberte štítky ke sledování'
+    sub_controls:
+      header: 'Odběr štítku {tagName}'
+      submit_button: 'Potvrdit odběr'
+      subscription_label: 'Vyberte úroveň odběru štítku {tagName}'
+fof-impersonate:
+  forum:
+    notice:
+      message: 'Momentálně jste přihlášeni jako {username}.'
+    return:
+      button: 'Vrátit se k účtu {username}'
+  lib:
+    modal:
+      impersonate_username: 'Přihlásit se jako {username}'
+      label: 'S velkou mocí přichází velká zodpovědnost. Pokračováním se stanete uživatelem {username}, dokud se nepřepnete zpět.'
+      placeholder_optional: '(Volitelné) Uveďte důvod přepnutí na tohoto uživatele'
+      placeholder_required: 'Než budete pokračovat, musíte uvést důvod přepnutí na tohoto uživatele'
+      title: 'Přihlásit se jako jiný uživatel'
+    user_controls:
+      impersonate_button: 'Přihlásit se jako uživatel'
+fof-linguist:
+  api:
+    cannot_change_key_or_locale: 'Klíč a jazyk uloženého překladu nelze změnit.'
+    invalid_icu_syntax: 'Překlad nemá platnou syntaxi ICU MessageFormat, například není uzavřená složená závorka.'
+fof-links:
+  forum:
+    header:
+      toggle_dropdown_accessible_label: 'Zobrazit odkazy v položce {title}'
+fof-masquerade:
+  forum:
+    alerts:
+      profile-completed: 'Profil je vyplněný! <a>Pokračovat na úvodní stránku</a>'
+    buttons:
+      edit-profile: 'Upravit profil'
+    profile:
+      empty-text: 'Tento uživatel zatím nevyplnil žádná pole profilu.'
+  lib:
+    gambits:
+      answer:
+        hint: 'hodnoty polí v profilu uživatele'
+        key: odpověď
+fof-merge-discussions:
+  api:
+    error:
+      into_itself: 'Diskuzi nelze sloučit samu se sebou.'
+      redirecting_failed: 'Přesměrování sloučených diskuzí se nezdařilo.'
+  email:
+    merged:
+      body: |
+        Vaši diskuzi {merged_discussion_title} sloučil uživatel {actor_display_name} do diskuze {discussion_title}.
+
+        Zobrazit ji můžete zde: {discussion_url}
+  forum:
+    modal:
+      ordering_suffix_label: 'Přidat sloučené příspěvky na konec diskuze'
+      preview_truncated: 'Zobrazeny příspěvky {from} až {to} z {total}.'
+      search_discussions_placeholder: 'Hledat diskuze…'
+    notification:
+      discussion_merged: 'Vaši diskuzi {oldTitle} sloučil uživatel {username} s touto diskuzí.'
+fof-online-users-widget:
+  forum:
+    widget:
+      more: '{count, plural, one {Další # uživatel online} few {Další # uživatelé online} other {Dalších # uživatelů online}}'
+fof-polls:
+  forum:
+    compose:
+      continue_editing: 'Pokračovat v úpravách'
+      draft_saved: 'Koncept uložen'
+      polls_manager: 'Správa anket'
+      polls_preview: 'Zobrazit anketu'
+      publish: Zveřejnit
+      save_as_draft: 'Uložit jako koncept'
+      schedule: Naplánovat
+      schedule_datetime_label: 'Čas zveřejnění'
+      schedule_publication: 'Naplánovat zveřejnění'
+      schedule_publication_edit: 'Upravit naplánované zveřejnění'
+      schedule_submit: Naplánovat
+      submit: Odeslat
+      success: 'Anketa byla uložena.'
+      update_draft: 'Aktualizovat koncept'
+    modal:
+      date_clear: 'Vymazat datum ukončení'
+      empty_answers: '{count, plural, one {# odpověď je prázdná – vyplňte ji, nebo ji odstraňte.} few {# odpovědi jsou prázdné – vyplňte je, nebo je odstraňte.} other {# odpovědí je prázdných – vyplňte je, nebo je odstraňte.}}'
+      hide_votes_label_help: 'Autor ankety uvidí hlasy vždy.'
+      poll_image:
+        alt_help_text: 'Pokud je nastaven obrázek, je tento text povinný. Zobrazí se, když se obrázek nepodaří načíst.'
+        alt_label: 'Alternativní text obrázku'
+        help: 'Nahrajte obrázek, který se zobrazí u ankety (volitelné).'
+        label: 'Obrázek ankety'
+        url_deprecated: 'Tato anketa používá obrázek z externí URL. Externí URL jsou zastaralé a v budoucí verzi budou odstraněny. Nahrajte prosím obrázek znovu tlačítkem pro nahrání.'
+      poll_option_image:
+        help: 'Nahrajte obrázek, který se zobrazí u odpovědi (volitelné).'
+        label: 'Obrázek odpovědi'
+      settings_label: Hlasování
+      subtitle_placeholder: 'Podnadpis/popis (volitelné)'
+      tooltip:
+        options:
+          remove-button: 'Odebrat odpověď'
+    page:
+      nav: Ankety
+      nav-all: 'Všechny globální ankety'
+      nav-groups: 'Skupiny anket'
+    poll:
+      cannot_start_poll_button: 'Nelze zahájit anketu'
+      draft_label: Koncept
+      scheduled_error_tooltip: 'Naplánované zveřejnění se nezdařilo. Důvod zjistíte po otevření ankety.'
+      scheduled_label: 'Naplánováno na {date}'
+      start_poll_button: 'Zahájit globální anketu'
+      total_votes: '{count, plural, one {Byl odevzdán # hlas} few {Byly odevzdány # hlasy} other {Bylo odevzdáno # hlasů}}'
+    poll_controls:
+      cancel_schedule_label: 'Zrušit naplánované zveřejnění'
+      cancel_schedule_success: 'Naplánované zveřejnění bylo zrušeno.'
+      delete_error_message: 'Při odstraňování ankety se něco pokazilo.'
+      delete_success_message: 'Anketa byla odstraněna.'
+      edit_schedule_publish_label: 'Upravit naplánované zveřejnění'
+      publish_label: 'Zveřejnit hned'
+      publish_success: 'Anketa byla zveřejněna.'
+      schedule_publish_label: 'Naplánovat zveřejnění'
+      toggle_dropdown_accessible_label: 'Přepnout nabídku ovládání ankety'
+      unpublish_confirmation: 'Vrátit tuto anketu mezi koncepty? Zmizí z přehledu anket.'
+      unpublish_error_has_votes: 'Anketu nelze vrátit mezi koncepty – už v ní někdo hlasoval. Místo toho ji odstraňte.'
+      unpublish_label: 'Vrátit mezi koncepty'
+      unpublish_success: 'Anketa byla vrácena mezi koncepty.'
+    poll_form:
+      delete: 'Odstranit anketu'
+      error: 'Při ukládání ankety došlo k chybě, kontaktujte prosím administrátora.'
+    poll_groups:
+      composer:
+        add_title: 'Přidat skupinu anket'
+        delete: 'Odstranit skupinu anket'
+        edit_title: 'Upravit skupinu anket'
+        error: 'Při ukládání skupiny anket došlo k chybě, kontaktujte prosím administrátora.'
+        groups_manager: 'Správa skupin anket'
+        name_label: Název
+        name_required: 'Skupina anket musí mít název.'
+        success: 'Skupina anket byla uložena.'
+        view_group: 'Zobrazit skupinu anket'
+      controls:
+        delete_confirmation: 'Opravdu chcete tuto skupinu anket odstranit?'
+        delete_error_message: 'Při odstraňování skupiny anket se něco pokazilo.'
+        delete_success_message: 'Skupina anket byla odstraněna.'
+        view_label: 'Zobrazit skupinu anket'
+      list_page:
+        add_poll_button: 'Přidat anketu do skupiny'
+        cannot_start_poll_group_button: 'Nelze vytvořit skupinu anket'
+        empty_text: 'Vypadá to, že tu nejsou žádné skupiny anket.'
+        no_polls: 'V této skupině nejsou žádné ankety.'
+        start_poll_group_button: 'Vytvořit skupinu anket'
+        title: 'Skupiny anket'
+    poll_never_ends: 'Anketa nikdy nekončí'
+    polls_count: '{count, plural, one {# hlas} few {# hlasy} other {# hlasů}}'
+    polls_list:
+      empty_text: 'Vypadá to, že tu nejsou žádné globální ankety.'
+      sort_dropdown:
+        least_voted: 'Nejméně hlasů'
+        most_voted: 'Nejvíce hlasů'
+        newest: Nejnovější
+        oldest: Nejstarší
+      status_filter:
+        all: Vše
+        draft: Koncepty
+        published: Zveřejněné
+    polls_page:
+      title: Ankety
+    showcase:
+      ended-polls: 'Ukončené ankety'
+      no-active-polls: 'Momentálně nejsou žádné aktivní ankety.'
+      no-recent-polls: 'Momentálně nejsou žádné nedávno ukončené ankety.'
+    upload_image:
+      remove_button: 'Odstranit obrázek'
+      upload_button: 'Nahrát obrázek'
+fof-recaptcha:
+  lib:
+    error: 'Při odesílání reCAPTCHA došlo k chybě. Zkuste to znovu.'
+    not_completed: 'Před pokračováním prosím dokončete ověření reCAPTCHA.'
+    rejected: 'Ověření reCAPTCHA se nezdařilo. Zkuste to prosím znovu.'
+    unknown_error: 'Došlo k neznámé chybě. Zkuste to prosím znovu.'
+fof-split:
+  api:
+    errors:
+      end_before_start: 'Rozdělení musí končit na příspěvku, kterým začíná, nebo na pozdějším.'
+      first_post: 'Úvodní příspěvek diskuze nelze oddělit.'
+  forum:
+    split:
+      cancel: 'Zrušit rozdělení'
+fof-terms:
+  forum:
+    update-alert:
+      can-accept-optional-message: 'Nedávno jsme aktualizovali podmínky. Můžete si je prohlédnout, až budete mít čas.'
+      close: Zavřít
+    user_settings:
+      optional_policies_label: Zásady
+fof-upload:
+  api:
+    upload_errors:
+      mime_permission_denied: 'Nemáte oprávnění nahrávat soubory tohoto typu.'
+  forum:
+    buttons:
+      upload_shared: Sdílené
+    display_name:
+      help: 'Zobrazí se u souboru místo jeho názvu. Pokud název nezměníte, použije se název souboru.'
+      insert: Vložit
+      title: 'Pojmenujte tento soubor ke stažení'
+      title_plural: 'Pojmenujte tyto soubory ke stažení'
+      use_file_name: 'Použít názvy souborů'
+    states:
+      permission_required: 'Vyžadováno oprávnění'
+    text_preview:
+      download: 'Stáhnout soubor'
+      no_snippet: '(náhled není k dispozici)'
+      no_snippet_preview: '(náhled se zde zobrazí po zveřejnění)'
+  lib:
+    file_list:
+      hide_file:
+        hide_success: 'Soubor byl skryt'
+        loading: 'Skrývání souboru…'
+        show_success: 'Soubor je zobrazen'
+      hide_shared_file:
+        btn_a11y_label_hide: 'Nastavit „{fileName}“ jako soukromý (bez veřejné URL)'
+        btn_a11y_label_show: 'Nastavit „{fileName}“ jako veřejný (s veřejnou URL)'
+        hide_confirmation: 'Opravdu chcete nastavit „{fileName}“ jako soukromý? Soukromý soubor přijde o veřejnou URL, existující příspěvky to ale neovlivní. Neoprávnění uživatelé ho také přestanou vidět ve správci médií.'
+        hide_fail: 'Soubor „{fileName}“ se nepodařilo nastavit jako soukromý'
+        hide_success: 'Soubor je nyní soukromý'
+        loading: 'Nastavování souboru jako soukromého…'
+        show_confirmation: 'Opravdu chcete nastavit „{fileName}“ jako veřejný? Veřejný soubor bude přístupný každému, kdo zná jeho veřejnou URL, a kdokoli ho bude moci sdílet přes správce médií.'
+        show_fail: 'Soubor „{fileName}“ se nepodařilo nastavit jako veřejný'
+        show_success: 'Soubor je nyní veřejný'
+      load_error: 'Soubory se nepodařilo načíst. Zkuste to prosím znovu.'
+      loading: 'Načítání souborů…'
+      modal_empty_desktop: 'Seznam souborů je prázdný. Soubor nahrajete kliknutím na tlačítko nebo přetažením sem.'
+      modal_empty_phone: 'Seznam souborů je prázdný. Soubor nahrajete klepnutím na tlačítko výše.'
+      release_to_upload: 'Pusťte pro nahrání'
+      select_file_a11y_label: 'Vybrat soubor „{fileName}“'
+    upload-shared-file-modal:
+      dropzone: 'Přetáhněte soubory sem nebo je vyberte kliknutím'
+      hide-from-media-gallery: 'Skrýt z galerie médií uživatele'
+fof-user-directory:
+  forum:
+    hero:
+      title: '=> fof-user-directory.forum.page.nav'
+  lib:
+    sort:
+      seen_oldest: 'Nejdéle neaktivní'
+      seen_recent: 'Naposledy online'
+validation:
+  accepted: 'Pole :attribute musí být přijato.'
+  accepted_if: 'Pole :attribute musí být přijato, pokud :other je :value.'
+  active_url: 'Pole :attribute musí být platná URL adresa.'
+  after: 'Pole :attribute musí být datum po :date.'
+  after_or_equal: 'Pole :attribute musí být datum :date nebo pozdější.'
+  alpha: 'Pole :attribute smí obsahovat pouze písmena.'
+  alpha_dash: 'Pole :attribute smí obsahovat pouze písmena, číslice, pomlčky a podtržítka.'
+  alpha_num: 'Pole :attribute smí obsahovat pouze písmena a číslice.'
+  array: 'Pole :attribute musí být seznam.'
+  ascii: 'Pole :attribute smí obsahovat pouze jednobajtové alfanumerické znaky a symboly.'
+  attributes:
+    g-recaptcha-response: reCAPTCHA
+  before: 'Pole :attribute musí být datum před :date.'
+  before_or_equal: 'Pole :attribute musí být datum :date nebo dřívější.'
+  between:
+    array: 'Pole :attribute musí obsahovat :min až :max položek.'
+    file: 'Pole :attribute musí mít velikost :min až :max kB.'
+    numeric: 'Pole :attribute musí být mezi :min a :max.'
+    string: 'Pole :attribute musí mít :min až :max znaků.'
+  can: 'Pole :attribute obsahuje nepovolenou hodnotu.'
+  confirmed: 'Potvrzení pole :attribute nesouhlasí.'
+  current_password: 'Heslo není správné.'
+  date: 'Pole :attribute musí být platné datum.'
+  date_equals: 'Pole :attribute musí být datum :date.'
+  date_format: 'Pole :attribute musí odpovídat formátu :format.'
+  decimal: 'Pole :attribute musí mít :decimal desetinných míst.'
+  declined: 'Pole :attribute musí být odmítnuto.'
+  declined_if: 'Pole :attribute musí být odmítnuto, pokud :other je :value.'
+  different: 'Pole :attribute a :other se musí lišit.'
+  digits: 'Pole :attribute musí mít :digits číslic.'
+  digits_between: 'Pole :attribute musí mít :min až :max číslic.'
+  dimensions: 'Pole :attribute má neplatné rozměry obrázku.'
+  doesnt_end_with: 'Pole :attribute nesmí končit žádnou z těchto hodnot: :values.'
+  doesnt_start_with: 'Pole :attribute nesmí začínat žádnou z těchto hodnot: :values.'
+  email: 'Pole :attribute musí být platná e-mailová adresa.'
+  ends_with: 'Pole :attribute musí končit jednou z těchto hodnot: :values.'
+  enum: 'Zvolená hodnota pole :attribute není platná.'
+  extensions: 'Pole :attribute musí mít jednu z těchto přípon: :values.'
+  file: 'Pole :attribute musí být soubor.'
+  gt:
+    array: 'Pole :attribute musí obsahovat více než :value položek.'
+    file: 'Pole :attribute musí být větší než :value kB.'
+    numeric: 'Pole :attribute musí být větší než :value.'
+    string: 'Pole :attribute musí být delší než :value znaků.'
+  gte:
+    array: 'Pole :attribute musí obsahovat alespoň :value položek.'
+    file: 'Pole :attribute musí mít alespoň :value kB.'
+    numeric: 'Pole :attribute musí být větší nebo rovno :value.'
+    string: 'Pole :attribute musí mít alespoň :value znaků.'
+  hex_color: 'Pole :attribute musí být platná barva v hexadecimálním zápisu.'
+  image: 'Pole :attribute musí být obrázek.'
+  in_array: 'Pole :attribute musí existovat v :other.'
+  integer: 'Pole :attribute musí být celé číslo.'
+  ip: 'Pole :attribute musí být platná IP adresa.'
+  ipv4: 'Pole :attribute musí být platná IPv4 adresa.'
+  ipv6: 'Pole :attribute musí být platná IPv6 adresa.'
+  json: 'Pole :attribute musí být platný řetězec JSON.'
+  lowercase: 'Pole :attribute musí být psáno malými písmeny.'
+  lt:
+    array: 'Pole :attribute musí obsahovat méně než :value položek.'
+    file: 'Pole :attribute musí být menší než :value kB.'
+    numeric: 'Pole :attribute musí být menší než :value.'
+    string: 'Pole :attribute musí být kratší než :value znaků.'
+  lte:
+    array: 'Pole :attribute nesmí obsahovat více než :value položek.'
+    file: 'Pole :attribute smí mít nejvýše :value kB.'
+    numeric: 'Pole :attribute musí být menší nebo rovno :value.'
+    string: 'Pole :attribute smí mít nejvýše :value znaků.'
+  mac_address: 'Pole :attribute musí být platná MAC adresa.'
+  max:
+    array: 'Pole :attribute nesmí obsahovat více než :max položek.'
+    file: 'Pole :attribute nesmí být větší než :max kB.'
+    numeric: 'Pole :attribute nesmí být větší než :max.'
+    string: 'Pole :attribute nesmí být delší než :max znaků.'
+  max_digits: 'Pole :attribute nesmí mít více než :max číslic.'
+  mimes: 'Pole :attribute musí být soubor typu: :values.'
+  mimetypes: 'Pole :attribute musí být soubor typu: :values.'
+  min:
+    array: 'Pole :attribute musí obsahovat alespoň :min položek.'
+    file: 'Pole :attribute musí mít alespoň :min kB.'
+    numeric: 'Pole :attribute musí být alespoň :min.'
+    string: 'Pole :attribute musí mít alespoň :min znaků.'
+  min_digits: 'Pole :attribute musí mít alespoň :min číslic.'
+  missing: 'Pole :attribute nesmí být vyplněno.'
+  missing_if: 'Pole :attribute nesmí být vyplněno, pokud :other je :value.'
+  missing_unless: 'Pole :attribute nesmí být vyplněno, pokud :other není :value.'
+  missing_with: 'Pole :attribute nesmí být vyplněno, pokud je vyplněno :values.'
+  missing_with_all: 'Pole :attribute nesmí být vyplněno, pokud jsou vyplněna :values.'
+  multiple_of: 'Pole :attribute musí být násobkem :value.'
+  not_regex: 'Formát pole :attribute není platný.'
+  numeric: 'Pole :attribute musí být číslo.'
+  password:
+    letters: 'Pole :attribute musí obsahovat alespoň jedno písmeno.'
+    mixed: 'Pole :attribute musí obsahovat alespoň jedno velké a jedno malé písmeno.'
+    numbers: 'Pole :attribute musí obsahovat alespoň jednu číslici.'
+    symbols: 'Pole :attribute musí obsahovat alespoň jeden symbol.'
+    uncompromised: 'Zadané :attribute se objevilo v úniku dat. Zvolte prosím jiné.'
+  present_if: 'Pole :attribute musí být přítomno, pokud :other je :value.'
+  present_unless: 'Pole :attribute musí být přítomno, pokud :other není :value.'
+  present_with: 'Pole :attribute musí být přítomno, pokud je přítomno :values.'
+  present_with_all: 'Pole :attribute musí být přítomno, pokud jsou přítomna :values.'
+  prohibits: 'Pole :attribute zakazuje přítomnost pole :other.'
+  recaptcha-unknown: 'Při ověřování reCAPTCHA došlo k neznámé chybě ({errors}).'
+  regex: 'Formát pole :attribute není platný.'
+  required_array_keys: 'Pole :attribute musí obsahovat položky pro: :values.'
+  required_if_accepted: 'Pole :attribute je vyžadováno, pokud je přijato :other.'
+  same: 'Pole :attribute musí odpovídat poli :other.'
+  size:
+    array: 'Pole :attribute musí obsahovat :size položek.'
+    file: 'Pole :attribute musí mít :size kB.'
+    numeric: 'Pole :attribute musí být :size.'
+    string: 'Pole :attribute musí mít :size znaků.'
+  starts_with: 'Pole :attribute musí začínat jednou z těchto hodnot: :values.'
+  string: 'Pole :attribute musí být text.'
+  timezone: 'Pole :attribute musí být platné časové pásmo.'
+  ulid: 'Pole :attribute musí být platný ULID.'
+  uppercase: 'Pole :attribute musí být psáno velkými písmeny.'
+  url: 'Pole :attribute musí být platná URL adresa.'
+  uuid: 'Pole :attribute musí být platné UUID.'

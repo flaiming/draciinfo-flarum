@@ -29,3 +29,6 @@ public/adminer.php
 
 # old migration scripts with hardcoded DB credentials
 /test/
+
+# Playwright MCP snapshots and logs (contain forum data)
+.playwright-mcp/
