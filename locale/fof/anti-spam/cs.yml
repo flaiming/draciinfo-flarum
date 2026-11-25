@@ -1,0 +1,24 @@
+fof-anti-spam:
+  admin:
+    permissions:
+      spamblock_users_label: Označit uživatele jako spammera
+  forum:
+    message:
+      stopforumspam:
+        blocked: Údaje z tvé registrace byly nalezeny v databázi spammerů, proto byla registrace zablokována.
+    spammer_modal:
+      hard_delete_discussions_label: Smazat diskuze
+      hard_delete_discussions_help: Trvale smaže všechny diskuze, které uživatel založil. Když je vypnuto, diskuze se jen skryjí.
+      hard_delete_posts_label: Smazat příspěvky
+      hard_delete_posts_help: Trvale smaže všechny příspěvky uživatele. Když je vypnuto, příspěvky se jen skryjí.
+      hard_delete_user_label: Smazat uživatele
+      hard_delete_user_help: Trvale smaže uživatele. Když je vypnuto, uživatel bude jen zablokován.
+      intro: Při označení uživatele jako spammera se provede několik akcí podle toho, jaká rozšíření fórum používá.
+      move_discussions_tag_label: Přesunout diskuze do karantény
+      move_discussions_tag_help: Přesune všechny diskuze uživatele do štítku nastaveného v administraci. Když je vypnuto, diskuze zůstanou ve svých štítcích.
+      process_button: Provést
+      title: "Označit {username} jako spammera"
+      report_to_sfs_label: Nahlásit do StopForumSpam
+      report_to_sfs_help: Odešle základní údaje o uživateli (jméno, e-mail, IP adresu) do StopForumSpam, aby se nemohl registrovat na dalších fórech, která tuto službu používají.
+    user_controls:
+      spammer_button: Spammer

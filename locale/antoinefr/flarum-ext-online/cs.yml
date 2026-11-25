@@ -1,9 +1,0 @@
-antoinefr-online:
-  forum:
-    title: Kdo je online ?
-    andmore: "a {more} dalších ..."
-  admin:
-    settings:
-      title: Nastavení
-      displaymax: Počet zobrazených uživatelů
-      titleoflist: Text zobrazený nad seznamem

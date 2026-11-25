@@ -4,54 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9804cc646a74ca90c04f0235ed4aa5cb",
+    "content-hash": "adae1477b39af249faa7c0b97400dbfd",
     "packages": [
-        {
-            "name": "antoinefr/flarum-ext-online",
-            "version": "v1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/AntoineFr/flarum-ext-online.git",
-                "reference": "463cdcedef979383f0a5c7356966c9bbd5fa0208"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/AntoineFr/flarum-ext-online/zipball/463cdcedef979383f0a5c7356966c9bbd5fa0208",
-                "reference": "463cdcedef979383f0a5c7356966c9bbd5fa0208",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.0.0"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "Online",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-user-circle",
-                        "backgroundColor": "#87ceeb",
-                        "color": "#ffd700"
-                    }
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "AntoineFr\\Online\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Display online users on the left sidebar.",
-            "support": {
-                "forum": "https://discuss.flarum.org/d/8302",
-                "issues": "https://github.com/AntoineFr/flarum-ext-online/issues",
-                "source": "https://github.com/AntoineFr/flarum-ext-online"
-            },
-            "time": "2021-06-05T13:05:02+00:00"
-        },
         {
             "name": "axy/backtrace",
             "version": "2.0.0",
@@ -1518,6 +1472,62 @@
             "time": "2026-11-09T23:30:17+00:00"
         },
         {
+            "name": "flarum-lang/czech",
+            "version": "1.1.12",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flarum-lang/czech.git",
+                "reference": "3c5f2318fc2d462280a3beaf94847e8d7e3e1625"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flarum-lang/czech/zipball/3c5f2318fc2d462280a3beaf94847e8d7e3e1625",
+                "reference": "3c5f2318fc2d462280a3beaf94847e8d7e3e1625",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.4"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "extiverse": {
+                    "discuss": ""
+                },
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                },
+                "flarum-locale": {
+                    "code": "cs",
+                    "title": "Czech"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "image": "icon.svg",
+                        "backgroundSize": "cover",
+                        "backgroundPosition": "center"
+                    },
+                    "title": "Czech",
+                    "category": "language"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Czech language pack for Flarum.",
+            "homepage": "https://github.com/flarum-lang/czech",
+            "keywords": [
+                "cs-locale",
+                "flarum",
+                "locale"
+            ],
+            "support": {
+                "issues": "https://github.com/flarum-lang/czech/issues",
+                "source": "https://github.com/flarum-lang/czech"
+            },
+            "time": "2026-11-15T07:27:22+00:00"
+        },
+        {
             "name": "flarum/approval",
             "version": "v1.8.2",
             "source": {
@@ -2938,6 +2948,109 @@
             "time": "2022-08-15T03:38:09+00:00"
         },
         {
+            "name": "fof/anti-spam",
+            "version": "1.1.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/anti-spam.git",
+                "reference": "bc9fc03c1747293ea0400289cb8590983219a4ad"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/anti-spam/zipball/bc9fc03c1747293ea0400289cb8590983219a4ad",
+                "reference": "bc9fc03c1747293ea0400289cb8590983219a4ad",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8.0"
+            },
+            "replace": {
+                "fof/spamblock": "*",
+                "fof/stopforumspam": "*"
+            },
+            "require-dev": {
+                "flarum/approval": "*",
+                "flarum/audit": "*",
+                "flarum/flags": "^1.8",
+                "flarum/phpstan": "^1.8",
+                "flarum/suspend": "^1.8",
+                "flarum/tags": "*",
+                "flarum/testing": "^1.0.0",
+                "fof/oauth": "*",
+                "fof/user-bio": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "js": true,
+                        "css": true,
+                        "admin": true,
+                        "forum": true,
+                        "locale": true,
+                        "gitConf": true,
+                        "styleci": true,
+                        "jsCommon": false,
+                        "prettier": true,
+                        "typescript": true,
+                        "bundlewatch": false,
+                        "editorConfig": true,
+                        "githubActions": true,
+                        "backendTesting": true
+                    }
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-shield-alt",
+                        "color": "#fff",
+                        "backgroundColor": "#e74c3c"
+                    },
+                    "title": "FoF Anti Spam",
+                    "category": "feature",
+                    "optional-dependencies": [
+                        "flarum/suspend",
+                        "flarum/flags",
+                        "flarum/approval",
+                        "flarum/tags",
+                        "flarum/audit"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\AntiSpam\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "IanM",
+                    "email": "ian@flarum.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Effective tools to manage spammers on your community.",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "flarum"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/33698",
+                "issues": "https://github.com/FriendsOfFlarum/anti-spam/issues",
+                "source": "https://github.com/FriendsOfFlarum/anti-spam"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2026-11-06T11:57:15+00:00"
+        },
+        {
             "name": "fof/byobu",
             "version": "1.3.2",
             "source": {
@@ -3362,6 +3475,87 @@
                 }
             ],
             "time": "2023-03-15T11:43:34+00:00"
+        },
+        {
+            "name": "fof/forum-widgets-core",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/forum-widgets-core.git",
+                "reference": "b5084447f69041fe0326a5a8bf3f5735c3f6f1ee"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/forum-widgets-core/zipball/b5084447f69041fe0326a5a8bf3f5735c3f6f1ee",
+                "reference": "b5084447f69041fe0326a5a8bf3f5735c3f6f1ee",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8",
+                "php": "^8.2"
+            },
+            "replace": {
+                "afrux/forum-widgets-core": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "image": "icon.svg"
+                    },
+                    "title": "FoF Widgets Core",
+                    "category": "forum-widget"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "FoF\\ForumWidgets\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FriendsOfFlarum",
+                    "homepage": "https://friendsofflarum.org"
+                }
+            ],
+            "description": "Core Extension for Managing Forum Widgets",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "core",
+                "flarum",
+                "framework",
+                "widgets"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/39064",
+                "issues": "https://github.com/FriendsOfFlarum/forum-widgets-core/issues",
+                "source": "https://github.com/FriendsOfFlarum/forum-widgets-core"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2026-04-12T21:10:46+00:00"
         },
         {
             "name": "fof/impersonate",
@@ -3816,6 +4010,88 @@
             "time": "2023-08-28T18:26:09+00:00"
         },
         {
+            "name": "fof/online-users-widget",
+            "version": "1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FriendsOfFlarum/online-users-widget.git",
+                "reference": "61699695afc8c4d0fb0eb7a616d0f51b54c75612"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FriendsOfFlarum/online-users-widget/zipball/61699695afc8c4d0fb0eb7a616d0f51b54c75612",
+                "reference": "61699695afc8c4d0fb0eb7a616d0f51b54c75612",
+                "shasum": ""
+            },
+            "require": {
+                "flarum/core": "^1.8.0",
+                "fof/forum-widgets-core": "^1.0.0",
+                "php": "^8.2"
+            },
+            "replace": {
+                "afrux/online-users-widget": "*"
+            },
+            "require-dev": {
+                "flarum/phpstan": "*",
+                "flarum/testing": "^1.0.0"
+            },
+            "type": "flarum-extension",
+            "extra": {
+                "flarum-cli": {
+                    "modules": {
+                        "githubActions": true
+                    }
+                },
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "flarum-extension": {
+                    "icon": {
+                        "name": "fas fa-user-friends",
+                        "color": "#fff",
+                        "backgroundColor": "#e74c3c"
+                    },
+                    "title": "FoF Online Users Widget",
+                    "category": "forum-widget"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "FoF\\OnlineUsers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "FriendsOfFlarum",
+                    "homepage": "https://friendsofflarum.org"
+                }
+            ],
+            "description": "Forum Widget That Lists Online Users",
+            "homepage": "https://friendsofflarum.org",
+            "keywords": [
+                "Users",
+                "flarum",
+                "online",
+                "widget"
+            ],
+            "support": {
+                "forum": "https://discuss.flarum.org/d/39065",
+                "issues": "https://github.com/FriendsOfFlarum/online-users-widget/issues",
+                "source": "https://github.com/FriendsOfFlarum/online-users-widget"
+            },
+            "funding": [
+                {
+                    "url": "https://opencollective.com/fof/donate",
+                    "type": "website"
+                }
+            ],
+            "time": "2026-04-12T21:16:17+00:00"
+        },
+        {
             "name": "fof/pages",
             "version": "1.0.7",
             "source": {
@@ -4108,83 +4384,6 @@
             "time": "2023-08-14T17:11:06+00:00"
         },
         {
-            "name": "fof/spamblock",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfFlarum/spamblock.git",
-                "reference": "ee4842ea3305f32596cfac90bb5fdf015b0c7d94"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfFlarum/spamblock/zipball/ee4842ea3305f32596cfac90bb5fdf015b0c7d94",
-                "reference": "ee4842ea3305f32596cfac90bb5fdf015b0c7d94",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.2.0"
-            },
-            "require-dev": {
-                "flarum/core": "*@dev",
-                "flarum/flags": "*@dev",
-                "flarum/suspend": "*@dev",
-                "flarum/testing": "^1.0.0",
-                "symfony/var-dumper": "*"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "FoF Spamblock",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-pastafarianism",
-                        "backgroundColor": "#e74c3c",
-                        "color": "#fff"
-                    },
-                    "optional-dependencies": [
-                        "flarum/suspend",
-                        "flarum/flags"
-                    ]
-                },
-                "flagrow": {
-                    "discuss": "https://discuss.flarum.org/d/17772"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "FoF\\Spamblock\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "David Sevilla Martin",
-                    "email": "david.s@redevs.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Mark user as spammer, suspending them & hiding their posts and discussions",
-            "homepage": "https://friendsofflarum.org",
-            "keywords": [
-                "flarum"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/17772",
-                "issues": "https://github.com/FriendsOfFlarum/spamblock/issues",
-                "source": "https://github.com/FriendsOfFlarum/spamblock"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/fof/donate",
-                    "type": "website"
-                }
-            ],
-            "time": "2022-11-02T00:13:11+00:00"
-        },
-        {
             "name": "fof/split",
             "version": "1.1.0",
             "source": {
@@ -4250,83 +4449,6 @@
                 }
             ],
             "time": "2022-07-01T11:09:44+00:00"
-        },
-        {
-            "name": "fof/stopforumspam",
-            "version": "1.2.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FriendsOfFlarum/stopforumspam.git",
-                "reference": "5c80fc939ba93e6b427c76fd6655b00c319c19db"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfFlarum/stopforumspam/zipball/5c80fc939ba93e6b427c76fd6655b00c319c19db",
-                "reference": "5c80fc939ba93e6b427c76fd6655b00c319c19db",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.2.0",
-                "guzzlehttp/guzzle": "^7.2"
-            },
-            "replace": {
-                "reflar/stopforumspam": "*"
-            },
-            "suggest": {
-                "fof/spamblock": "Allows the option to report spammers to StopForumSpam in order to keep the greater forum community spam free."
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "flarum-extension": {
-                    "title": "FoF Stop Forum Spam",
-                    "category": "feature",
-                    "icon": {
-                        "name": "fas fa-stop-circle",
-                        "backgroundColor": "#e74c3c",
-                        "color": "#fff"
-                    },
-                    "optional-dependencies": [
-                        "fof/spamblock"
-                    ]
-                },
-                "flagrow": {
-                    "discuss": "https://discuss.flarum.org/d/17846"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "FoF\\StopForumSpam\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "FoF Team",
-                    "email": "team@friendsofflarum.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Check user registrations against the StopForumSpam database",
-            "homepage": "https://friendsofflarum.org",
-            "keywords": [
-                "flarum",
-                "friendsofflarum"
-            ],
-            "support": {
-                "forum": "https://discuss.flarum.org/d/17846",
-                "issues": "https://github.com/FriendsOfFlarum/stopforumspam/issues",
-                "source": "https://github.com/FriendsOfFlarum/stopforumspam"
-            },
-            "funding": [
-                {
-                    "url": "https://opencollective.com/fof/donate",
-                    "type": "website"
-                }
-            ],
-            "time": "2022-11-02T00:49:58+00:00"
         },
         {
             "name": "fof/terms",
@@ -7138,63 +7260,6 @@
                 }
             ],
             "time": "2026-07-09T11:49:27+00:00"
-        },
-        {
-            "name": "madnest/flarum-lang-czech",
-            "version": "v1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/madnest/flarum-lang-czech.git",
-                "reference": "f1e04a9434d765705b2528145f4a05e7beb6de0a"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/madnest/flarum-lang-czech/zipball/f1e04a9434d765705b2528145f4a05e7beb6de0a",
-                "reference": "f1e04a9434d765705b2528145f4a05e7beb6de0a",
-                "shasum": ""
-            },
-            "require": {
-                "flarum/core": "^1.0.0"
-            },
-            "type": "flarum-extension",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.0.x-dev"
-                },
-                "flarum-extension": {
-                    "title": "Czech",
-                    "category": "language",
-                    "info": {
-                        "donate": "https://flarum.org/donate/",
-                        "website": "https://flarum.org",
-                        "support": "https://discuss.flarum.org"
-                    },
-                    "icon": {
-                        "image": "icon.svg",
-                        "backgroundColor": "#00247d",
-                        "backgroundSize": "cover",
-                        "backgroundPosition": "center"
-                    }
-                },
-                "flarum-locale": {
-                    "code": "cs",
-                    "title": "Čeština"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Czech language pack for Flarum.",
-            "keywords": [
-                "flarum",
-                "locale"
-            ],
-            "support": {
-                "issues": "https://github.com/madnest/flarum-lang-czech/issues",
-                "source": "https://github.com/madnest/flarum-lang-czech/tree/v1.0.0"
-            },
-            "time": "2021-06-14T15:20:14+00:00"
         },
         {
             "name": "matthiasmullie/minify",
