@@ -39,14 +39,11 @@
         "docs": "https://flarum.org/docs/"
     },
     "require": {
-        "blomstra/spam-prevention": "^1.5",
-        "clarkwinkelmann/flarum-ext-author-change": "*",
-        "clarkwinkelmann/flarum-ext-mass-actions": "^1.1",
-        "darkle/fancybox": "^1.1",
-        "flarum-lang/czech": "^1.1",
+        "flaiming/flarum-masquerade-text-field": "*@dev",
+        "flarum-lang/czech": "*",
         "flarum/approval": "*",
         "flarum/bbcode": "*",
-        "flarum/core": "^v1.0",
+        "flarum/core": "^2.0",
         "flarum/emoji": "*",
         "flarum/flags": "*",
         "flarum/lang-english": "*",
@@ -54,14 +51,14 @@
         "flarum/lock": "*",
         "flarum/markdown": "*",
         "flarum/mentions": "*",
-        "flarum/pusher": "*",
         "flarum/statistics": "*",
         "flarum/sticky": "*",
         "flarum/subscriptions": "*",
         "flarum/suspend": "*",
         "flarum/tags": "*",
+        "flectar/flarum-fancybox": "*",
         "fof/analytics": "*",
-        "fof/anti-spam": "^1.1",
+        "fof/anti-spam": "*",
         "fof/byobu": "*",
         "fof/discussion-thumbnail": "*",
         "fof/disposable-emails": "*",
@@ -70,13 +67,11 @@
         "fof/impersonate": "*",
         "fof/linguist": "*",
         "fof/links": "*",
-        "fof/masquerade": "*@dev",
+        "fof/masquerade": "^3.0",
         "fof/merge-discussions": "*",
-        "fof/nightmode": "*",
-        "fof/online-users-widget": "^1.0",
+        "fof/online-users-widget": "*",
         "fof/pages": "*",
         "fof/polls": "*",
-        "fof/pretty-mail": "*",
         "fof/recaptcha": "*",
         "fof/split": "*",
         "fof/terms": "*",
@@ -84,7 +79,7 @@
         "fof/user-bio": "*",
         "fof/user-directory": "*",
         "sycho/flarum-profile-cover": "*",
-        "v17development/flarum-blog": "^0.4.0",
+        "v17development/flarum-blog": "*",
         "v17development/flarum-seo": "*"
     },
     "config": {
@@ -93,8 +88,10 @@
     },
     "minimum-stability": "beta",
     "prefer-stable": true,
-    "repositories": [{
+    "repositories": [
+        {
             "type": "path",
-            "url": "packages/*"
-        }]
+            "url": "packages/masquerade-text-field"
+        }
+    ]
 }
