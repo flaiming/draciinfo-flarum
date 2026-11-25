@@ -1,6 +1,16 @@
 # Czech translations for rob006-software/flarum-translations (branch flarum2), the source of flarum-lang/czech,
 # that no flarum-lang/czech release contains yet. Delete this directory once one does.
 core:
+  admin:
+    edit_group:
+      delete_button: 'Odstranit skupinu'
+      delete_confirmation: 'Opravdu chcete odstranit tuto skupinu? Její členové odstraněni nebudou.'
+    permissions:
+      allow_hide_own_posts_label: 'Povolit odstraňování vlastních příspěvků'
+      delete_discussions_forever_label: 'Odstranit diskuze navždy'
+      delete_discussions_label: 'Odstranit diskuze'
+      delete_posts_forever_label: 'Odstranit příspěvky navždy'
+      delete_posts_label: 'Odstranit příspěvky'
   api:
     invalid_username_message: 'Uživatelské jméno může obsahovat pouze písmena, číslice a pomlčky a musí obsahovat alespoň jedno písmeno.'
   email:
@@ -26,7 +36,7 @@ core:
         {url}
 
         Pokud jste to nebyli vy, ignorujte prosím tento e-mail.
-    greeting: 'Ahoj, {displayName},'
+    greeting: 'Dobrý den, {displayName},'
     informational:
       default_title: Informace
       footer: 'Tento e-mail byl odeslán na adresu {userEmail} jako informace týkající se vašeho účtu na fóru [{forumTitle}]({forumUrl}).'
@@ -67,6 +77,8 @@ core:
         Pokud jste to nebyli vy, ignorujte prosím tento e-mail.
     signoff: 'Tým fóra {forumTitle}'
   forum:
+    discussion_controls:
+      delete_confirmation: 'Opravdu chcete tuto diskuzi odstranit?'
     discussion_list:
       skip_discussion_list_pane: 'Přeskočit panel se seznamem diskuzí'
     header:
@@ -87,6 +99,10 @@ core:
       username_or_email_placeholder: '=> core.ref.username_or_email_placeholder'
     notifications:
       delete_all_confirm: 'Opravdu chcete odstranit všechna oznámení? Tuto akci nelze vrátit zpět'
+      delete_all_tooltip: 'Odstranit všechna oznámení'
+    post_controls:
+      delete_confirmation: 'Opravdu chcete tento příspěvek navždy odstranit? Tuto akci nelze vzít zpět.'
+      hide_confirmation: 'Opravdu chcete odstranit tento příspěvek?'
     post_list:
       empty_text: 'Vypadá to, že tu nejsou žádné příspěvky.'
       in_discussion_text: 'V diskuzi {discussion}'
@@ -110,6 +126,10 @@ core:
       haptic_feedback_help: 'Dostupné jen na podporovaných mobilních zařízeních'
       haptic_feedback_label: 'Zapnout haptickou odezvu'
       reset_notifications_button: 'Obnovit výchozí nastavení'
+    user_controls:
+      delete_confirmation: 'Opravdu chcete uživatele odstranit? Příspěvky tohoto uživatele odstraněny NEBUDOU.'
+      delete_error_message: 'Odstranění uživatele <i>{username} ({email})</i> se nezdařilo'
+      delete_success_message: 'Uživatel <i>{username} ({email})</i> byl odstraněn'
   lib:
     assets_updated:
       message: 'Je k dispozici novější verze této stránky.'
@@ -123,6 +143,7 @@ core:
       userListJoinDate: LLL
     error:
       db_error_message: 'Databázový dotaz selhal. Příčinou může být nekompatibilita mezi některým rozšířením a ovladačem vaší databáze.'
+      extension_initialiation_failed_message: 'Rozšíření {extension} se nepodařilo inicializovat, další informace naleznete v konzoli prohlížeče.'
       extension_runtime_failed_message: 'Při běhu rozšíření {extension} došlo k chybě. Podrobnosti najdete v konzoli prohlížeče.'
       network_message: 'Zdá se, že je problém s připojením. Zkontrolujte prosím síť a zkuste to znovu.'
       offline_message: 'Zdá se, že jste offline. Zkontrolujte prosím připojení a zkuste to znovu.'
@@ -209,9 +230,13 @@ core:
       search_placeholder: '=> core.ref.search_users'
       submit_button: '=> core.ref.okay'
       title: 'Vyberte uživatele'
+    username:
+      deleted_text: '[odstraněný]'
   ref:
     dark_hc_mode_label: 'Tmavý režim s vysokým kontrastem'
     dark_mode_label: 'Tmavý režim'
+    delete: Odstranit
+    delete_forever: 'Odstranit navždy'
     invalid_login_message: 'Vaše přihlašovací údaje nejsou správné.'
     latest: Poslední
     light_hc_mode_label: 'Světlý režim s vysokým kontrastem'
@@ -374,12 +399,17 @@ flarum-suspend:
         suspended:
           key: pozastavený
 flarum-tags:
+  admin:
+    edit_tag:
+      delete_tag_button: 'Odstranit štítek'
+      delete_tag_confirmation: 'Opravdu chcete odstranit tento štítek? Diskuze s tímto štítkem odstraněny NEBUDOU.'
   forum:
     deck:
       column_label: Štítek
       tag_label: Štítek
       tag_placeholder: 'Hledat štítek'
   lib:
+    deleted_tag_text: 'Odstraněný štítek'
     gambits:
       discussions:
         tag:
@@ -415,6 +445,10 @@ fof-anti-spam:
     spammer_modal:
       success: 'Uživatel {username} byl označen jako spammer.'
 fof-byobu:
+  admin:
+    settings:
+      delete_on_last_recipient_left: 'Odstranit soukromou diskuzi poté, co ji opustil poslední účastník'
+      delete_on_last_recipient_left_help: 'Pokud je tato možnost povolena, budou soukromé diskuze nenávratně odstraněny, jakmile poslední účastník diskuzi opustí. V opačném případě budou soukromé diskuze skryty (soft deleted).'
   email:
     body:
       made_public: |
@@ -456,7 +490,7 @@ fof-byobu:
     gambits:
       allows-pd:
         hint: ano
-        key: povoluje-sd
+        key: povoluje-soukromé
       byobu:
         hint: 'uživatelské nebo zobrazované jméno příjemce'
         key: byobu
@@ -537,10 +571,18 @@ fof-impersonate:
     user_controls:
       impersonate_button: 'Přihlásit se jako uživatel'
 fof-linguist:
+  admin:
+    buttons:
+      delete-all: 'Odstranit všechny překlady'
+      delete-redundant: 'Odstranit nadbytečné překlady'
   api:
     cannot_change_key_or_locale: 'Klíč a jazyk uloženého překladu nelze změnit.'
     invalid_icu_syntax: 'Překlad nemá platnou syntaxi ICU MessageFormat, například není uzavřená složená závorka.'
 fof-links:
+  admin:
+    edit_link:
+      delete_link_button: 'Odstranit odkaz'
+      delete_link_confirmation: 'Opravdu chcete odstranit „{title}“?'
   forum:
     header:
       toggle_dropdown_accessible_label: 'Zobrazit odkazy v položce {title}'
@@ -579,6 +621,11 @@ fof-online-users-widget:
   forum:
     widget:
       more: '{count, plural, one {Další # uživatel online} few {Další # uživatelé online} other {Dalších # uživatelů online}}'
+fof-pages:
+  admin:
+    edit_page:
+      delete_page_button: 'Odstranit stránku'
+      delete_page_confirmation: 'Opravdu chcete tuto stránku odstranit?'
 fof-polls:
   forum:
     compose:
@@ -614,6 +661,9 @@ fof-polls:
       tooltip:
         options:
           remove-button: 'Odebrat odpověď'
+    moderation:
+      delete: 'Odstranit anketu'
+      delete_confirm: 'Opravdu chcete tuto anketu odstranit?'
     page:
       nav: Ankety
       nav-all: 'Všechny globální ankety'
@@ -628,6 +678,7 @@ fof-polls:
     poll_controls:
       cancel_schedule_label: 'Zrušit naplánované zveřejnění'
       cancel_schedule_success: 'Naplánované zveřejnění bylo zrušeno.'
+      delete_confirmation: 'Opravdu chcete tuto anketu odstranit?'
       delete_error_message: 'Při odstraňování ankety se něco pokazilo.'
       delete_success_message: 'Anketa byla odstraněna.'
       edit_schedule_publish_label: 'Upravit naplánované zveřejnění'
@@ -702,6 +753,12 @@ fof-split:
     split:
       cancel: 'Zrušit rozdělení'
 fof-terms:
+  admin:
+    buttons:
+      delete-policy: 'Odstranit zásady'
+    policies:
+      export-url-help: |
+        Každý uživatel s oprávněním „Exportovat všechna data zásad“ může přistupovat k těmto adresám URL a stáhnout si seznam uživatelů, kteří tuto zásadu přijali. Další podrobnosti o dostupných možnostech najdete na <a>wiki rozšíření</a>.
   forum:
     update-alert:
       can-accept-optional-message: 'Nedávno jsme aktualizovali podmínky. Můžete si je prohlédnout, až budete mít čas.'
@@ -709,6 +766,9 @@ fof-terms:
     user_settings:
       optional_policies_label: Zásady
 fof-upload:
+  admin:
+    permissions:
+      delete_uploads_of_others_label: 'Skrývat a odstraňovat nahrané soubory ostatních uživatelů'
   api:
     upload_errors:
       mime_permission_denied: 'Nemáte oprávnění nahrávat soubory tohoto typu.'
@@ -725,14 +785,18 @@ fof-upload:
       permission_required: 'Vyžadováno oprávnění'
     text_preview:
       download: 'Stáhnout soubor'
+      error: |
+        Chyba při náhledu souboru. Možná byl odstraněn nebo je zadané ID souboru neplatné.
       no_snippet: '(náhled není k dispozici)'
       no_snippet_preview: '(náhled se zde zobrazí po zveřejnění)'
   lib:
     file_list:
+      delete_confirmation: 'Opravdu chcete odstranit „{fileName}“?'
+      delete_file_a11y_label: 'Odstranit soubor „{fileName}“'
       hide_file:
         hide_success: 'Soubor byl skryt'
         loading: 'Skrývání souboru…'
-        show_success: 'Soubor je zobrazen'
+        show_success: 'Soubor byl zobrazen'
       hide_shared_file:
         btn_a11y_label_hide: 'Nastavit „{fileName}“ jako soukromý (bez veřejné URL)'
         btn_a11y_label_show: 'Nastavit „{fileName}“ jako veřejný (s veřejnou URL)'

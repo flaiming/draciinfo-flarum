@@ -1,18 +1,6 @@
 fof-impersonate:
-    admin:
-        permissions:
-            login: Přihlásit jako jiný uživatel
-        settings:
-            title: FoF Impersonate
-            require_reason: Vyžadovat důvod před přihlášením jako jiný uživatel.
-            no_settings_available: Nejsou dostupná žádná nastavení. Zkus nainstalovat fof/moderator-notes
-
-    forum:
-        modal:
-            title: Přihlásit jako jiný uživatel
-            label: S velkou mocí se pojí velké povinnosti. Pokračováním se z tebe stává {username} dokud se neodhlásíš.
-            placeholder_optional: (Nepovinné) Napiš proč se chceš vydávat za tohoto uživatele
-            placeholder_required: Před pokračováním musíš napsat důvod, proč se chceš za tohoto uživatele
-            impersonate_username: Přihlásit jako {username}
-        user_controls:
-            impersonate_button: Přihlásit jako uživatel
+  admin:
+    permissions:
+      login: 'Přihlásit jako jiný uživatel'
+    settings:
+      require_reason: 'Vyžadovat důvod před přihlášením jako jiný uživatel.'

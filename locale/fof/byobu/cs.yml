@@ -1,89 +1,31 @@
 fof-byobu:
-    forum:
-        badges:
-            is_private:
-                tooltip: Soukromá diskuze
-        buttons:
-            add_recipients: Příjemci
-            submit: OK
-            edit_recipients: Upravit příjemce
-            send_pd: "Pošli {username} zprávu"
-            cancel: Zrušit
-            remove_from_discussion: Opustit tuto soukromou diskuzi
-            make_public: Zveřejnit tuto diskuzi
-        composer_private_discussion:
-            submit_button: Založit soukromou diskuzi
-            title_placeholder: Název soukromé diskuze
-        labels:
-            recipients: "Příjemců: {count}|Příjemců: {count}"
-            user_deleted: -smazán-
-        nav:
-            start_button: Nová soukromá diskuze
-        input:
-            search_recipients: Pro hledání napiš alespoň tři znaky...
-        search:
-            headings:
-                groups: Skupiny oprávnění
-        modal:
-            titles:
-                update_recipients: Změnit příjemce od {title}
-                add_recipients: Přidat příjemce do diskuze
-            help:
-                add_recipients: Diskuze bude viditelná jen pro uživatele, které si zde vybereš. Je vyžadován alespoň jeden další příjemce kromě tebe.
-                update_recipients: Diskuze bude viditelná jen pro uživatele, které si zde vybereš.
-        post:
-            recipients_modified:
-                added_and_removed: "{username} přidal(a) příjemce {added} a odstranil(a) {removed}."
-                added: "{username} přidal(a) příjemce {added}."
-                removed: "{username} odstranil(a) příjemce {removed}."
-                removed_self: "{username} opustil(a) soukromou diskuzi."
-        user:
-            settings:
-                block_pd: Blokovat soukromé diskuze
-
-            byobu_link: Soukromé diskuze
-            dropdown_label: Soukromé diskuze
-
-        notifications:
-            pd_label: Někdo si mě přidal do nové soukromé diskuze
-            pd_reply_label: Někdo přispěl do soukromé diskuze kterou sleduji
-            pd_reply_text: "{username} přispěl(a) do soukromé diskuze kterou sleduješ"
-            pd_text: "{username} s tebou začal(a) novou soukromou diskuzi"
-            pd_user_left_label: Příjemce opustil soukromou diskuzi kterou sleduji
-            pd_user_left_text: "{username} opustil(a) soukromou diskuzi"
-            pd_added_text: "{username} tě přidal(a) do soukromé diskuze"
-            pd_added_label: "Někdo si mě přidal do existující soukromé diskuze"
-            pd_made_public_label: "Soukromá diskuze byla zveřejněna"
-            pd_made_public_text: "{username} zveřejnil(a) soukromou diskuzi"
-
-        confirm:
-            make_public: Tímto se soukromá diskuze zveřejní pro VŠECHNY uživatele. Zvaž jestli je to dobrý nápad než budeš pokračovat.
-
-    admin:
-        permission:
-            create_private_discussions_with_users: Vytvořit soukromou diskuzi s uživateli
-            create_private_discussions_with_groups: Vytvořit soukromou diskuzi se skupinami
-            create_private_discussions_with_blocking_users: Vytvořit soukromou diskuzi s uživateli, kteří ji mají blokovanou
-            edit_user_recipients: Upravit příjemce v soukromých diskuzích
-            edit_group_recipients: Upravit skupiny v soukromých diskuzích
-            make_private_into_public: Převést soukromou diskuzi na veřejnou
-            view_private_discussions-when-flagged: Zobrazit nahlášené soukromé diskuze jiných uživatelů
-
-        settings:
-            use_tag_slug: Vyber štítek, který budou mít všechny soukromé diskuze
-            use_tag_slug_help: 'Vyber "{no_restriction}" aby si uživatelé mohli zvolit vlastní štítek. Vztahuje se jen na nově vytvořené diskuze.'
-            use_tag_slug_no_restriction: "- Bez omezení -"
-            byobu_index: Zobrazit odkaz na soukromé diskuze na hlavní stránce
-            byobu_index_help: Pokud je volba zapnutá, odkaz na soukromé diskuze bude vidět v navigaci fóra
-
+  forum:
+    composer_private_discussion:
+      submit_button: 'Založit soukromou diskuzi'
+    nav:
+      start_button: 'Nová soukromá diskuze'
+    modal:
+      titles:
+        update_recipients: 'Změnit příjemce od {title}'
+        add_recipients: 'Přidat příjemce do diskuze'
+    post:
+      recipients_modified:
+        added_and_removed: '{username} přidal(a) příjemce {added} a odstranil(a) {removed}.'
+        added: '{username} přidal(a) příjemce {added}.'
+        removed: '{username} odstranil(a) příjemce {removed}.'
+        removed_self: '{username} opustil(a) soukromou diskuzi.'
     notifications:
-        private_discussion_created:
-            title: "[Soukromá diskuze] uživatel s tebou začal novou soukromou diskuzi"
-        private_discussion_replied:
-            title: "[Soukromá diskuze] uživatel přispěl do soukromé diskuze"
-        recipient_removed:
-            title: "[Soukromá diskuze] uživatel opustil soukromou diskuzi"
-        private_discussion_added:
-            title: "[Soukromá diskuze] uživatel tě přidal do soukromé diskuze"
-        made_public:
-            title: "[Soukromá diskuze] uživatel zveřejnil soukromou diskuzi"
+      pd_label: 'Někdo si mě přidal do nové soukromé diskuze'
+      pd_reply_label: 'Někdo přispěl do soukromé diskuze, kterou sleduji'
+      pd_user_left_label: 'Příjemce opustil soukromou diskuzi, kterou sleduji'
+      pd_user_left_text: '{username} opustil(a) soukromou diskuzi'
+      pd_added_label: 'Někdo si mě přidal do existující soukromé diskuze'
+  admin:
+    permission:
+      create_private_discussions_with_users: 'Vytvořit soukromou diskuzi s uživateli'
+      create_private_discussions_with_groups: 'Vytvořit soukromou diskuzi se skupinami'
+      create_private_discussions_with_blocking_users: 'Vytvořit soukromou diskuzi s uživateli, kteří ji mají blokovanou'
+      edit_user_recipients: 'Upravit příjemce v soukromých diskuzích'
+      edit_group_recipients: 'Upravit skupiny v soukromých diskuzích'
+      make_private_into_public: 'Převést soukromou diskuzi na veřejnou'
+      view_private_discussions-when-flagged: 'Zobrazit nahlášené soukromé diskuze jiných uživatelů'

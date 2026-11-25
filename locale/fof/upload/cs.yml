@@ -1,87 +1,48 @@
 fof-upload:
   admin:
-    buttons:
-      save: Uložit nastavení
     help_texts:
-      description: |
-        Nastavení nahrávacích služeb
-      disable-download-logging: |
-        Vypne logování všech stahování na fóru. Pokud necháš zapnuté, můžeš v blízké budoucnosti vidět statistiky a počty stažení
       disable-hotlink-protection: |
         Ochrana proti stahování souborů z cizích stránek. Aktuální metoda vyžaduje csrf token a post id.
       download_templates: |
         Šablony určují jak budou soubory vidět ve fóru, například jako náhledy, tlačítka apod. Zatím jsou dostupné:
       mime_types: |
-        Tady si přes regulérní příkazy můžeš namapovat upload adapter a šablonu pro každý nahraný MIME type.
-      resize: |
-        Vyber, jestli chceš obrázky při nahrání zmenšit. Můžeš zadat maximální šířku a výšku v pixelech. Změna velikosti zachovává poměr stran.
-      watermark: |
-        Vyber, jestli se obrázky nahrají s vodoznakem. Vodoznaky jsou přidávány podle nastavení níže. Neplatí pro GIF.
+        Rozhodněte, jaké soubory smějí členové nahrávat, kde se jednotlivé druhy ukládají a jak se zobrazují v příspěvku.
     labels:
       aws-s3:
-        bucket: Bucket
-        key: Key
         region: Oblast
-        secret: Secret
-        title: Nastavení úložiště AWS S3
       disable-download-logging:
-        title: Nelogovat stahování
+        title: 'Nelogovat stahování'
         toggle: Vypnout
       disable-hotlink-protection:
-        title: Vypnout hotlink ochranu
+        title: 'Vypnout hotlink ochranu'
         toggle: Vypnout
-      imgur:
-        client_id: Imgur client ID
-        title: Nastavení úložiště obrázků Imgur
-      local:
-        cdn_url: Content Delivery URL (prefixes files)
-        title: Nastavení místního úložiště
-      qiniu:
-        title: Nastavení úložiště Qiniu
-        key: Key
-        secret: Secret
-        bucket: Bucket
       preferences:
-        max_file_size: Maximální velikost souboru (v kB)
-        mime_types: 'Nastav MIME typ a adaptér pro nahrávání'
-        title: Obecná nastavení
+        max_file_size: 'Maximální velikost souboru (v kB)'
+        mime_types: 'Typy souborů'
       resize:
-        max_width: Maximální šířka
         title: Zmenšení
-        toggle: Zmenšovat obrázky
+        toggle: 'Zmenšovat obrázky'
       watermark:
-        file: Nahraj svůj vodoznak
-        position: Pozice vodoznaku
+        position: 'Pozice vodoznaku'
         title: Vodoznak
-        toggle: Přidat vodoznak
+        toggle: 'Přidat vodoznak'
     permissions:
-      download_label: Stahovat soubory
-      upload_label: Nahrávat soubory
+      download_label: 'Stahovat soubory'
+      upload_label: 'Nahrávat soubory'
     templates:
-      file: Přednastavená šablona stažení souboru
+      file: 'Přednastavená šablona stažení souboru'
       file_description: |
         Zobrazuje název souboru a základní informace. Stahování probíhá přes php, lze tedy dělat statistiky a chránit před hotlinky.
-      image: Default image download template
-      image-preview: Complete image preview template
       image-preview_description: |
         Vložit plný obrázek. Bez možnosti stažení, statistik a ochrany proti hotlinkování.
       image_description: |
         Zobrazuje náhled obrázku a stažení probíhá přes php, lze tedy dělat statistiky a chránit před hotlinky.
-    upload_methods:
-      aws-s3: Amazon S3
-      imgur: Imgur
-      local: Místní
-      ovh-svfs: OVH SVFS
-      qiniu: QiNiu
   forum:
     buttons:
       attach: Nahrát
     states:
-      error: Chyba
       loading: Nahrávám
-      unauthorized: Nemáš oprávnění stahovat soubory
   api:
     upload_errors:
-      forbidden_type: Nahrání tohoto typu souboru není povolené
+      forbidden_type: 'Nahrání tohoto typu souboru není povolené'
       unsupported_type: 'Upload adapter nepodporuje poskytnutý mime type: {mime}.'
-      could_not_detect_mime: Nelze detekovat MIME type tohoto souboru, zkus to prosím znovu.

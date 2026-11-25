@@ -1,64 +1,50 @@
 fof-masquerade:
-    forum:
-        alerts:
-            profile-completion-required: >
-                Vyplňte prosím níže požadované údaje.
-        buttons:
-            view-profile: Profil
-            save-profile: Uložit
-        fields:
-            select:
-                none-optional: Žádná možnost nevybrána (nepovinné)
-                none-required: Zvolte prosím jednu možnost (povinné)
-            boolean:
-                yes: Ano
-                no: Ne
-    admin:
-        title: Masquerade
-        general-options: Obecná nastavení
-        buttons:
-            add-field: Vytvořit pole
-            edit-field: Uložit změny
-            delete-field: Odstranit pole
-        permissions:
-            have-profile: Vyvořit masquerade profil
-            view-profile: Zobrazit masquerade profil
-        menu:
-            description: >
-                Nastav pole masquerade profilu.
-        fields:
-            title: Pole
-            add: Přidat pole {field}
-            edit: Upravit pole {field}
-            name: Název pole
-            name-help: >
-                Veřejně viditelný název pole (nepřekládá se).
-            description: Popis pole
-            description-help: >
-                Nepovinný popis vysvětlující účel tohoto pole. 
-            required: Označit pole jako povinné
-            on_bio: Zobrazit odpověď v kartě uživatele 
-            type: Typ
-            validation: Validace
-            validation-help: >
-                Prozkoumejte podporované <a>validační pravidla Lavarelu</a>. Například:
-                "string|min:5" nebo "url".
-            prefix: Předpona pole
-            prefix-help: >
-                Zobraz tuto předponu před odpovědí uživatele pro toto pole.
-            icon: Ikona
-            icon-help: >
-                Ikona zobrazená před hodnotou vyplněnou uživatelem. Pro přehled
-                o dostupných ikonách navštivte <a>web FontAwesome</a>. Používejte názvy ikon
-                s předponou "fa-", například "fas fa-info".
-            force-user-to-completion: Vynutit vyplnění profilu
-            disable-user-bio: Vypnout krátký popis v kartě uživatele
-            options: Možnosti
-            option-new: Nová možnost
-            option-coma-warning: Název možnosti nemůže obsahovat čárku (",").
-        types:
-            advanced: Pokročilý
-            boolean: Ano/Ne
-            email: Email
-            select: Výběr z možností
-            url: Url adresa
+  forum:
+    alerts:
+      profile-completion-required: |
+        Vyplňte prosím níže požadované údaje.
+    buttons:
+      view-profile: Profil
+      save-profile: Uložit
+    fields:
+      select:
+        none-optional: 'Žádná možnost nevybrána (nepovinné)'
+        none-required: 'Zvolte prosím jednu možnost (povinné)'
+      boolean:
+        'yes': Ano
+        'no': Ne
+  admin:
+    buttons:
+      add-field: 'Vytvořit pole'
+      edit-field: 'Uložit změny'
+      delete-field: 'Odstranit pole'
+    permissions:
+      have-profile: 'Vytvořit masquerade profil'
+      view-profile: 'Zobrazit masquerade profil'
+    fields:
+      title: Pole
+      edit: 'Upravit pole {field}'
+      name: 'Název pole'
+      name-help: |
+        Veřejně viditelný název pole (nepřekládá se).
+      description: 'Popis pole'
+      description-help: |
+        Nepovinný popis vysvětlující účel tohoto pole. 
+      required: 'Označit pole jako povinné'
+      on_bio: 'Zobrazit odpověď v kartě uživatele'
+      type: Typ
+      validation: Validace
+      validation-help: |
+        Prozkoumejte podporovaná <a>validační pravidla Laravelu</a>. Například: "string|min:5" nebo "url".
+      icon: Ikona
+      icon-help: |
+        Ikona zobrazená před hodnotou vyplněnou uživatelem. Pro přehled o dostupných ikonách navštivte <a>web FontAwesome</a>. Používejte názvy ikon s předponou "fa-", například "fas fa-info".
+      force-user-to-completion: 'Vynutit vyplnění profilu'
+      options: Možnosti
+      option-new: 'Nová možnost'
+    types:
+      advanced: Pokročilý
+      boolean: Ano/Ne
+      email: Email
+      select: 'Výběr z možností'
+      url: 'Url adresa'

@@ -1,44 +1,14 @@
 fof-polls:
   admin:
     permissions:
-      moderate: Upravit a mazat ankety
-      self_edit: Umožnit uživateům upravovat své ankety
-      start: Založit anketu
-      vote: Hlasovat v anketě
-
+      start: 'Založit anketu'
+      vote: 'Hlasovat v anketě'
   forum:
-    days_remaining: Anketa končí v {time}.
-    no_permission: Nemáš právo hlasovat
-    poll_ended: Tato anketa už skončila
-    public_poll: Zobrazit hlasující
-
+    poll_ended: 'Tato anketa už skončila'
     composer_discussion:
-      add_poll: Přidat anketu
-      edit_poll: => fof-polls.forum.moderation.edit
-
+      add_poll: 'Přidat anketu'
     modal:
-      add_title: Přidat anketu
-      add_option_label: Přidat možnost
-      date_placeholder: Datum konce ankety (nepovinné)
-      edit_title: Upravit anketu
-      include_question: Musíš napsat otázku
-      max: Anketa může mít nejvíce 10 možností
-      min: Anketa musí mít alespoň 2 možnosti
-      no_voters: Žádné hlasy
-      option_placeholder: Odpověď
-      options_label: Odpovědi
-      public_poll_label: Povolit uživatelům podívat se kdo hlasoval
-      question_placeholder: Otázka
-      submit: Odeslat
-
-    moderation:
-      delete: Smazat anketu
-      delete_confirm: Opravdu chceš smazat tuto anketu?
-      edit: Upravit anketu
-
-    tooltip:
-      badge: Anketa
-      votes: "1 hlas|{count} hlasů"
-
-    votes_modal:
-      title: Hlasující
+      date_placeholder: 'Datum konce ankety (nepovinné)'
+      min: 'Anketa musí mít alespoň 2 možnosti'
+      no_voters: 'Žádné hlasy'
+      public_poll_label: 'Povolit uživatelům podívat se, kdo hlasoval'

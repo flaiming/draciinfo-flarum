@@ -1,15 +1,18 @@
 fof-split:
-    admin:
-        permissions:
-            split_discussion_label: Oddělit příspěvky z diskuzí
-    forum:
-        post:
-            was_split_to: "{count} příspěvek byl oddělen {target}.|{count} příspěvky byly odděleny do {target}."
-            was_split_from: "{count} příspěvek byl oddělen z {target}.|{count} příspěvky byly odděleny z {target}."
-        split:
-            from: Oddělit odsud
-            to: Oddělit až sem
-        modal:
-            title: Oddělit diskuzi
-            new_discussion_label: Vyplň název nové diskuze
-            submit_button: Oddělit
+  admin:
+    permissions:
+      split_discussion_label: 'Oddělit příspěvky z diskuzí'
+  forum:
+    post:
+      was_split_to: '{count, plural, one {# příspěvek byl oddělen do {target}.} few {# příspěvky byly odděleny do {target}.} other {# příspěvků bylo odděleno do {target}.}}'
+      was_split_from: '{count, plural, one {# příspěvek byl oddělen z {target}.} few {# příspěvky byly odděleny z {target}.} other {# příspěvků bylo odděleno z {target}.}}'
+    split:
+      from: 'Oddělit odsud'
+      to: 'Oddělit až sem'
+      cancel: 'Zrušit oddělení'
+    modal:
+      title: 'Oddělit diskuzi'
+      submit_button: Oddělit
+  api:
+    errors:
+      end_before_start: 'Oddělení musí končit na příspěvku, kterým začíná, nebo na pozdějším.'

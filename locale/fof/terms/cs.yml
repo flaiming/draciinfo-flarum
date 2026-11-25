@@ -1,76 +1,45 @@
 fof-terms:
-    admin:
-        settings:
-            title: Nastavení podmínek
-
-            field:
-                signup-legal-text: Doplňkový text na registračním formuláři
-                hide-updated-at: Nezobrazovat datum změny podmínek když je dostupná novější verze
-                date-format: Formát data
-                date-format-help: Můžeš použít jakýkoli platný <a>Moment.js</a> formát. Nech prázdné pro výchozí.
-
-        titles:
-            policies: Politiky
-
-        buttons:
-            new-policy: Nová politika
-            edit-policy: Upravit politiku
-            add-policy: Přidat politiku
-            save-policy: Uložit politiku
-            delete-policy: Smazat politiku
-            set-to-now: Nastavit na teď
-
-        messages:
-            delete-policy-confirmation: >
-                Tímto se trvale smaže politika {name} a přidružené souhlasy z databáze.
-                Ujisti se že máš zálohy těchto dat kdyby byla potřeba z právních důvodů.
-                Opravdu chceš smazat tuto politiku ?
-
-        policies:
-            name: Název
-            name-help: Tento název bude zobrazen vedle zaškrtávacího políčka a jako titulek oznámení.
-            url: URL
-            url-help: Adresa URL stránky, kde jsou podmínky k přečtení. Otevírá se v novém panelu.
-            update-message: Oznámení o změně
-            update-message-help: Zpráva zobrazená existujícím uživatelům, kteří ještě nepřijali nejnovější verzi podmínek.
-            terms-updated-at: Změněn v
-            terms-updated-at-placeholder: YYYY-MM-DD (hh:mm:ss)
-            terms-updated-at-help: >
-                Datum poslední změny podmínek.
-                Změnou tohoto data budou všichni uživatelé nuceni potvrdit nové podmínky.
-                Musí být datum v minulosti (jinak nelze podmínky potvrdit a uživatelé se nedostanou přes oznámení).
-            export-url: Exportovat URL
-            export-url-help: >
-                Každý uživatel s oprávněním "Exportovat data uživatelských politik" může přistupovat na adresy ke stažení seznamu uživatelů, kteří přijali tyto politiky.
-                O dalších možnostech se můžeš dočíst na <a>wiki doplňku</a>.
-
-        permissions:
-            see-user-policies-state: Vidět stav uživatelských politik
-            postpone-policies-accept: Odložit potvrzení nových podmínek
-            export-policies: Exportovat data uživatelských politik
-
-    forum:
-        signup:
-            i-accept: Souhlasím s <a>{policy}</a>
-            must-accept: Musíte souhlasit s {policy}.
-
-        accept-modal:
-            title: Změna podmínek
-            updated-at: Podmínky se změnily {date}
-            updated-recently: Od tvé poslední návštěvy se změnily podmínky
-            i-accept: Přijímám <a>{policy}</a>
-            accept: Potvrdit
-            close: Nyní můžete zavřít toto oznámení
-
-        state-modal:
-            title: Stav přijetí podmínek uživatele {username}
-            accepted-at: Přijal(a) v {date}
-            not-accepted: Nepřijal(a)
-
-        update-alert:
-            must-accept-message: Dokud neodsouhlasíš nové podmínky, budeš mít omezený přístup k účtu.
-            can-accept-message: Nedávno jsme změnili podmínky. Musíš je přijmout abys mohl(a) pokračovat.
-            review: Klikni zde pro zobrazení a potvrzení nových podmínek
-
-        user_controls:
-            state_button: Stav přijetí podmínek
+  admin:
+    settings:
+      field:
+        signup-legal-text: 'Doplňkový text na registračním formuláři'
+        hide-updated-at: 'Nezobrazovat datum změny podmínek, když je dostupná novější verze'
+    titles:
+      policies: Politiky
+    buttons:
+      new-policy: 'Nová politika'
+      edit-policy: 'Upravit politiku'
+      add-policy: 'Přidat politiku'
+      save-policy: 'Uložit politiku'
+      delete-policy: 'Odstranit politiku'
+      set-to-now: 'Nastavit na teď'
+    policies:
+      name-help: 'Tento název bude zobrazen vedle zaškrtávacího políčka a jako titulek oznámení.'
+      url-help: 'Adresa URL stránky, kde jsou podmínky k přečtení. Otevírá se v novém panelu.'
+      update-message: 'Oznámení o změně'
+      update-message-help: 'Zpráva zobrazená existujícím uživatelům, kteří ještě nepřijali nejnovější verzi podmínek.'
+      terms-updated-at: 'Změněn v'
+      terms-updated-at-placeholder: 'YYYY-MM-DD (hh:mm:ss)'
+      terms-updated-at-help: |
+        Datum poslední změny podmínek. Změnou tohoto data budou všichni uživatelé nuceni potvrdit nové podmínky. Musí být datum v minulosti (jinak nelze podmínky potvrdit a uživatelé se nedostanou přes oznámení).
+      export-url-help: |
+        Každý uživatel s oprávněním „Exportovat data uživatelských politik“ může na těchto adresách stáhnout seznam uživatelů, kteří politiku přijali. Další možnosti najdete na <a>wiki rozšíření</a>.
+    permissions:
+      see-user-policies-state: 'Vidět stav uživatelských politik'
+      postpone-policies-accept: 'Odložit potvrzení nových podmínek'
+      export-policies: 'Exportovat data uživatelských politik'
+  forum:
+    signup:
+      i-accept: 'Souhlasím s <a>{policy}</a>'
+      must-accept: 'Musíte souhlasit s {policy}.'
+    accept-modal:
+      title: 'Změna podmínek'
+      updated-at: 'Podmínky se změnily {date}'
+      i-accept: 'Přijímám <a>{policy}</a>'
+      close: 'Nyní můžete zavřít toto oznámení'
+    state-modal:
+      title: 'Stav přijetí podmínek uživatele {username}'
+      accepted-at: 'Přijal(a) v {date}'
+      not-accepted: Nepřijal(a)
+    user_controls:
+      state_button: 'Stav přijetí podmínek'

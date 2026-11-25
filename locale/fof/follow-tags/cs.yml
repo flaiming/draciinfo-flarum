@@ -1,41 +1,18 @@
 fof-follow-tags:
   forum:
-    settings:
-      notify_new_discussion_label: Někdo založil diskuzi s tagem který sleduji
-      notify_new_post_label: Někdo přispěl v tagu který sleduji
-
-
     index:
-      follow_tag_button: Sledovat
       unfollow_tag_button: Nesledovat
-
-
     sub_controls:
-      follow_button: => fof-follow-tags.ref.follow
-      following_button: => fof-follow-tags.ref.following
-      following_text: Oznamovat všechny nové diskuze.
-      hiding_button: => fof-follow-tags.ref.hiding
-      hiding_text: Skrývat diskuze ze stránky Všechy diskuze.
-      ignoring_button: => fof-follow-tags.ref.ignoring
-      ignoring_text: Nikdy neoznamovat.
-      lurking_button: => fof-follow-tags.ref.lurking
-      lurking_text: Oznamovat nové diskuze a odpovědi.
+      following_text: 'Oznamovat všechny nové diskuze.'
+      hiding_text: 'Skrývat diskuze ze stránky Všechny diskuze.'
+      ignoring_text: 'Nikdy neoznamovat.'
+      lurking_text: 'Oznamovat nové diskuze a odpovědi.'
       not_following_button: Nesleduji
-      not_following_text: "Oznamovat jen @zmínky."
-      notify_alert_tooltip: Při zalození diskuze nebo odpovědi dostaneš oznámení na fóru
-      notify_email_tooltip: Při založení diskuze nebo odpovědi dostaneš email
-
+      not_following_text: 'Oznamovat jen @zmínky.'
     notifications:
-      new_discussion_text: "{username} založil"
-      new_post_text: "{username} přispěl"
-
-  email:
-    newDiscussionInTag: "[Tag | Nová diskuze] název"
-    newPostInTag: "[Tag | Nový příspěvek] název"
-
+      new_discussion_text: '{username} založil'
   ref:
-    follow: Sledovat
     following: Sleduji
-    hiding: Skrývám se
+    hiding: 'Skrývám se'
     ignoring: Ignoruji
     lurking: Nahlížím

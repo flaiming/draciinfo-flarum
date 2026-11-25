@@ -1,4 +1,0 @@
-v17development-flarum-seo:
-  forum:
-    profile_title: "Profil uživatele {username}"
-    profile_description: "Profil: {username} | {discussion_count} diskuzí | {comment_count} příspěvků"
