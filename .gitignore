@@ -24,3 +24,6 @@ packages/
 # DB dumps and DB admin tool, never publish (public repo)
 *.sql
 public/adminer.php
+
+# old migration scripts with hardcoded DB credentials
+/test/
